@@ -130,6 +130,8 @@ a.pub:hover{background:rgba(31,122,51,.04);color:var(--ink)}
 .pub-main{flex:1 1 480px;min-width:0}
 .pub-title{font-weight:600;font-size:18px;line-height:1.4}
 .pub-authors{color:var(--muted);font-size:16px;margin-top:6px}
+.pub-cite{font-size:15px;color:var(--muted);margin-top:4px}
+.pub-cite em{color:var(--ink-2)}
 .pub-arrow{flex:0 0 auto;align-self:center;font-size:20px;color:var(--accent)}
 .year-nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
 .year-nav a{font-size:14px;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:8px;border:1px solid var(--line-2);color:var(--ink)}
