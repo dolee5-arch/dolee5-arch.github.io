@@ -22,3 +22,7 @@ GitHub Pages로 공개됩니다: https://dolee5-arch.github.io
 - **사진 넣기**: 사진을 `assets/img/`에 올리고 각 파일의 안내 주석대로 바꿉니다.
 
 GitHub 웹 화면에서 파일을 열고 연필(Edit) 아이콘을 누르면 바로 수정할 수 있고, **Commit changes**를 누르면 1~2분 뒤 사이트에 반영됩니다.
+
+## 디자인(style.css)을 바꾼 뒤에는
+
+모든 HTML 파일의 `assets/style.css?v=날짜` 숫자를 새 날짜로 바꿔 주세요. 그래야 방문자 브라우저가 예전 디자인을 쓰지 않고 새 디자인을 불러옵니다.
