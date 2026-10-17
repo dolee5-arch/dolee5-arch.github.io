@@ -99,14 +99,15 @@ section{padding:104px 0}
 
 /* professor */
 .prof{display:flex;flex-wrap:wrap;gap:56px}
-.prof-photo{flex:1 1 300px;max-width:380px}
+.prof-photo{flex:0 1 260px;max-width:260px}
 .prof-photo .figph{aspect-ratio:4/5}
-.prof-photo img{border-radius:20px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.prof-photo img{border-radius:20px;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.prof-photo{align-self:flex-start}
 .prof-body{flex:999 1 520px;min-width:0}
-.timeline{list-style:none;margin:40px 0 0;padding:0;border-left:2px solid var(--line)}
-.timeline li{position:relative;padding:0 0 28px 28px}
+.timeline{list-style:none;margin:28px 0 0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 12px 24px;line-height:1.45}
 .timeline li:last-child{padding-bottom:0}
-.timeline li::before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:#A9B5AE}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:#A9B5AE}
 .timeline li:first-child::before{background:var(--accent)}
 .timeline .when{font-family:var(--mono);font-size:13px;color:var(--muted)}
 .timeline .what{font-weight:600}
@@ -150,6 +151,29 @@ a.pub:hover{background:rgba(31,122,51,.04);color:var(--ink)}
 .split > div{flex:1 1 400px;min-width:0}
 
 /* members */
+.pi-section{padding:72px 0}
+.prof{gap:48px}
+.prof-name{font-size:30px;letter-spacing:-.01em}
+.prof-title{margin:8px 0 0;font-size:16.5px;color:var(--ink-2)}
+.prof-contact{margin:12px 0 0;font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
+.timeline .what{font-size:16px}
+.timeline .where{font-size:15px}
+.students{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.student{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:36px 28px 32px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
+.student img{width:168px;height:168px;border-radius:50%;object-fit:cover;margin-bottom:12px;box-shadow:0 0 0 6px var(--accent-soft)}
+.student-name{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:24px;letter-spacing:-.01em}
+.student-role{color:var(--muted);font-size:16px}
+.student p{margin:8px 0 4px;color:var(--ink-2);font-size:17px}
+.student a{font-size:15px;margin-top:auto}
+.recruit{margin-top:28px;background:var(--paper);border:2px solid var(--accent);border-radius:24px;padding:28px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 32px}
+.recruit > div{flex:1 1 420px}
+.recruit-title{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:24px;line-height:1.25}
+.recruit-sub{margin-top:8px;color:var(--ink-2)}
+.recruit .btn{font-size:18px;padding:14px 32px}
+.alumni-group{margin-top:28px}
+.alumni-group h3{font-size:22px;color:var(--blue);margin-bottom:12px}
+.alumni-names{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0 32px}
+.alumni-names li{padding:12px 0;border-bottom:1px solid var(--line-2);font-size:19px;font-weight:500}
 .subhead{font-size:32px;margin:0 0 28px}
 .member-block{padding:88px 0;border-top:1px solid var(--line-2)}
 .alumni-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0 32px}
@@ -171,6 +195,7 @@ a.pub:hover{background:rgba(31,122,51,.04);color:var(--ink)}
 .site-footer{background:var(--paper);color:var(--muted);border-top:1px solid var(--line);font-size:14px}
 .site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 32px;padding:32px 24px}
 .site-footer .uos{height:40px;width:auto}
+.prof-contact a{color:var(--accent)}
 .footer-text{display:flex;flex-direction:column;gap:4px}
 .site-footer a{color:var(--accent)}
 

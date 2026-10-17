@@ -37,20 +37,18 @@
 </section>
 
 <!-- PRINCIPAL INVESTIGATOR -->
-<section id="pi" style="scroll-margin-top:96px">
+<section id="pi" class="pi-section" style="scroll-margin-top:96px">
   <div class="wrap prof">
     <div class="prof-photo">
-      <img src="assets/img/professor.jpg" alt="Prof. Doohwan Lee" width="640" height="800">
+      <img src="assets/img/professor.jpg" alt="Prof. Doohwan Lee" width="560" height="700">
     </div>
     <div class="prof-body">
       <p class="eyebrow">Principal Investigator</p>
-      <h2>Doohwan Lee, Ph.D.</h2>
-      <p class="lead" style="margin:12px 0 0">Professor, Department of Chemical Engineering, University of Seoul<br>이두환 교수 · 서울시립대학교 화학공학과</p>
-      <div class="btns" style="margin-top:24px">
-        <a class="btn" href="mailto:dolee@uos.ac.kr">dolee@uos.ac.kr</a>
-        <a class="btn" href="tel:+82264905472">+82-2-6490-5472</a>
-      </div>
+      <h2 class="prof-name">Doohwan Lee, Ph.D.</h2>
+      <p class="prof-title">Professor, Department of Chemical Engineering, University of Seoul<br>이두환 교수 · 서울시립대학교 화학공학과</p>
+      <p class="prof-contact"><a href="mailto:dolee@uos.ac.kr">dolee@uos.ac.kr</a><span aria-hidden="true">·</span><span>Office +82-2-6490-2371</span></p>
       <ol class="timeline">
+        <li><div class="when">Mar 2010 – Present</div><div class="what">Professor, Department of Chemical Engineering</div><div class="where">University of Seoul, Seoul, Korea</div></li>
         <li><div class="when">Feb 2016 – Feb 2017</div><div class="what">Visiting Scientist</div><div class="where">US Department of Energy</div></li>
         <li><div class="when">Dec 2004 – Feb 2010</div><div class="what">Samsung Advanced Institute of Technology</div><div class="where">Samsung Electronics, Yongin, Korea</div></li>
         <li><div class="when">Nov 2003 – Nov 2004</div><div class="what">Postdoctoral Research Associate</div><div class="where">University of California, Berkeley, CA</div></li>
@@ -66,32 +64,36 @@
   <div class="wrap">
     <p class="eyebrow">Students</p>
     <h2 class="subhead">Current students</h2>
-    <!-- 구성원 추가: <article class="person"> 블록을 복사하세요. 사진은 assets/img/ 에 올리고 <img class="avatar" src="assets/img/이름.jpg" ...> 줄의 파일명을 바꾸면 됩니다 -->
-    <div class="grid-3">
-      <article class="person">
-        <div class="person-top">
-          <img class="avatar" src="assets/img/narim-park.jpg" alt="Narim Park" width="320" height="320">
-          <div><div class="person-name">Narim Park</div><div class="person-role">박나림 · M.S. student</div></div>
-        </div>
+    <!-- 구성원 추가: <article class="student"> 블록을 복사하세요. 사진은 assets/img/ 에 올리고 img 줄의 파일명을 바꾸면 됩니다 -->
+    <div class="students">
+      <article class="student">
+        <img src="assets/img/narim-park.jpg" alt="Narim Park" width="320" height="320">
+        <div class="student-name">Narim Park</div>
+        <div class="student-role">박나림 · M.S. student</div>
         <p>Semi-solid flow battery 시스템 개발 및 고효율화 연구</p>
         <a href="mailto:skfla33@uos.ac.kr">skfla33@uos.ac.kr</a>
       </article>
-      <article class="person">
-        <div class="person-top">
-          <img class="avatar" src="assets/img/hongsup-shim.jpg" alt="HongSup Shim" width="320" height="320">
-          <div><div class="person-name">HongSup Shim</div><div class="person-role">심홍섭 · M.S. student</div></div>
-        </div>
+      <article class="student">
+        <img src="assets/img/hongsup-shim.jpg" alt="HongSup Shim" width="320" height="320">
+        <div class="student-name">HongSup Shim</div>
+        <div class="student-role">심홍섭 · M.S. student</div>
         <p>Vanadium redox flow battery 전극소재 개발 및 시스템 고효율화 연구</p>
         <a href="mailto:hongsup14@uos.ac.kr">hongsup14@uos.ac.kr</a>
       </article>
-      <article class="person">
-        <div class="person-top">
-          <img class="avatar" src="assets/img/dongyoon-lee.jpg" alt="DongYoon Lee" width="320" height="320">
-          <div><div class="person-name">DongYoon Lee</div><div class="person-role">이동윤 · M.S. student</div></div>
-        </div>
+      <article class="student">
+        <img src="assets/img/dongyoon-lee.jpg" alt="DongYoon Lee" width="320" height="320">
+        <div class="student-name">DongYoon Lee</div>
+        <div class="student-role">이동윤 · M.S. student</div>
         <p>Semi-solid flow battery 시스템 개발 및 고효율화 연구</p>
         <a href="mailto:ldy3808@uos.ac.kr">ldy3808@uos.ac.kr</a>
       </article>
+    </div>
+    <div class="recruit">
+      <div>
+        <div class="recruit-title">We are recruiting Ph.D., M.S. and undergraduate researchers.</div>
+        <div class="recruit-sub">대학원 진학 및 학부연구생 참여를 희망하는 학생은 언제든지 연락 바랍니다. 대학원생에게는 등록금과 생활비를 지원합니다.</div>
+      </div>
+      <a class="btn solid" href="contact.html">Join us</a>
     </div>
   </div>
 </section>
@@ -101,27 +103,35 @@
   <div class="wrap">
     <p class="eyebrow">Alumni</p>
     <h2 class="subhead">Alumni</h2>
-    <!-- 학위·졸업연도는 <span class="deg">M.S. 2025</span> 형식으로 이름 옆에 넣으세요 -->
-    <ul class="alumni-list">
-      <li><span>Jaeho Jo</span><span class="deg"></span></li>
-      <li><span>Seunghee Hong</span><span class="deg"></span></li>
-      <li><span>Jaewoo Park</span><span class="deg"></span></li>
-      <li><span>Jihun Paick</span><span class="deg"></span></li>
-      <li><span>Seongcheol Kim</span><span class="deg"></span></li>
-      <li><span>Dohyun Han</span><span class="deg"></span></li>
-      <li><span>Hyebin Kim</span><span class="deg"></span></li>
-      <li><span>Hyunju Lee</span><span class="deg"></span></li>
-      <li><span>Seungju Lee</span><span class="deg"></span></li>
-      <li><span>Hyebin Lim</span><span class="deg"></span></li>
-      <li><span>Jieun Kim</span><span class="deg"></span></li>
-      <li><span>Jaesung Kim</span><span class="deg"></span></li>
-      <li><span>Jiyeon Kim</span><span class="deg"></span></li>
-      <li><span>Inbae Kim</span><span class="deg"></span></li>
-      <li><span>Kwanhyung Lim</span><span class="deg"></span></li>
-      <li><span>Youngwoo Choi</span><span class="deg"></span></li>
-      <li><span>Juheon Lee</span><span class="deg"></span></li>
-      <li><span>Changsun Han</span><span class="deg"></span></li>
-    </ul>
+    <!-- 졸업생 추가: 해당 학위 목록에 <li>이름</li> 한 줄을 추가하세요 -->
+    <div class="alumni-group">
+      <h3>Ph.D.</h3>
+      <ul class="alumni-names">
+        <li>Jieun Kim</li>
+      </ul>
+    </div>
+    <div class="alumni-group">
+      <h3>M.S.</h3>
+      <ul class="alumni-names">
+        <li>Jaeho Jo</li>
+        <li>Seunghee Hong</li>
+        <li>Jaewoo Park</li>
+        <li>Jihun Paick</li>
+        <li>Seongcheol Kim</li>
+        <li>Dohyun Han</li>
+        <li>Hyebin Kim</li>
+        <li>Hyunju Lee</li>
+        <li>Seungju Lee</li>
+        <li>Hyebin Lim</li>
+        <li>Jaesung Kim</li>
+        <li>Jiyeon Kim</li>
+        <li>Inbae Kim</li>
+        <li>Kwanhyung Lim</li>
+        <li>Youngwoo Choi</li>
+        <li>Juheon Lee</li>
+        <li>Changsun Han</li>
+      </ul>
+    </div>
   </div>
 </section>
 </main>
@@ -130,7 +140,7 @@
   <div class="wrap">
     <div class="footer-text">
       <span>© 2026 Green Energy &amp; Catalysis Lab · 그린에너지 및 촉매 연구실</span>
-      <span>Room 323, UOS Innovation Complex, University of Seoul · <a href="mailto:dolee@uos.ac.kr">dolee@uos.ac.kr</a></span>
+      <span>Room 323, UOS Innovation Complex, University of Seoul · Lab +82-2-6490-5472</span>
     </div>
     <a href="https://www.uos.ac.kr" aria-label="University of Seoul"><img class="uos" src="assets/img/uos-logo.png" alt="University of Seoul" width="751" height="123"></a>
   </div>
