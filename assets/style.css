@@ -304,3 +304,43 @@ body{word-break:keep-all;overflow-wrap:break-word}
   .menu a.cta{padding:8px 16px}
   .page-members .prof-photo{max-width:200px}
 }
+
+/* ---- 2026-10-17 readability pass (desktop + mobile) ---- */
+@media (max-width:900px){.hero-art{display:none}}
+/* keep publication lines to a comfortable reading length */
+.pub-main{max-width:860px}
+.pub-arrow{margin-left:auto}
+.page-head .lead{max-width:760px}
+
+@media (max-width:640px){
+  /* compact, non-pinned header: logo on one row, all five links on the next */
+  .site-header{position:static}
+  .nav{padding:10px 16px 6px;gap:4px}
+  .brand img{height:52px}
+  .menu{width:100%;flex-wrap:nowrap;justify-content:space-between;gap:0 8px;font-size:15px}
+  .menu a{padding:8px 0;white-space:nowrap}
+  .menu a.cta{padding:6px 14px}
+  /* hero: drop the decorative molecule so the message and buttons stay on screen */
+  .hero-art{display:none}
+  .hero-inner{padding:40px 20px 44px}
+  /* research: the area number on its own line wastes space on small screens */
+  .thrust-num{display:none}
+  .thrust{padding:40px 0}
+  /* publications: one swipeable row of years instead of a tall block */
+  .year-nav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -16px 32px;padding:0 16px 6px;scrollbar-width:none}
+  .year-nav::-webkit-scrollbar{display:none}
+  .year-nav a{flex:0 0 auto}
+  .year{scroll-margin-top:16px;margin-top:36px}
+  .wrap{padding:0 20px}
+}
+@media (max-width:640px){
+  /* keep the link arrow beside the paper instead of on its own line */
+  .pub:not(:has(.pub-meta)){flex-wrap:nowrap;gap:12px}
+  .pub:not(:has(.pub-meta)) .pub-main{flex:1 1 auto}
+}
+@media (max-width:360px){
+  .nav{padding-left:12px;padding-right:12px}
+  .menu{font-size:13px;gap:0 4px}
+  .menu a.cta{padding:5px 8px}
+  .wrap{padding:0 16px}
+}
