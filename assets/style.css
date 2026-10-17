@@ -260,3 +260,8 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .scard img{box-shadow:0 0 0 1px var(--line-2)}
 .scard-photo{width:168px;height:210px;border-radius:16px;background:var(--sand);box-shadow:0 0 0 1px var(--line-2);display:flex;align-items:center;justify-content:center;color:#9AAAA3}
 .scard img,.scard-photo{width:204px;height:255px}
+.alumni-rows{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));column-gap:48px}
+.alumni-rows li{padding:13px 0;border-bottom:1px solid var(--line-2);font-size:18px;line-height:1.45}
+.al-name{font-weight:600;color:var(--ink)}
+.al-meta{color:var(--ink-2)}
+@media (max-width:640px){.alumni-rows{grid-template-columns:1fr}}
