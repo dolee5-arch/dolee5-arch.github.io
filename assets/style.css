@@ -246,3 +246,15 @@ a.pub:hover{background:rgba(31,122,51,.04);color:var(--ink)}
 .scard-mail{margin-top:auto;font-size:16px;font-weight:500;text-decoration:none;color:var(--accent)}
 .scard-mail:hover{text-decoration:underline}
 body{word-break:keep-all;overflow-wrap:break-word}
+
+/* student cards v3: smaller portrait */
+.scards{grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:24px}
+.scard{align-items:center;text-align:center;padding:32px 24px 28px}
+.scard img{width:168px;height:210px;aspect-ratio:auto;border-radius:16px;object-position:center 25%}
+.scard-body{padding:20px 4px 0;align-items:center}
+.scard-name{font-size:24px}
+.scard-name span{display:block;margin:4px 0 0;font-size:16px}
+.scard-role{align-self:center}
+.scard-label{margin-top:18px}
+.scard-topic{font-size:18px;margin:6px 0 16px}
+.scard img{box-shadow:0 0 0 1px var(--line-2)}
