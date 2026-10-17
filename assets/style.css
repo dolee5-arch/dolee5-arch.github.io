@@ -97,7 +97,10 @@ section{padding:80px 0}
 .thrust-num{flex:0 0 56px;font-size:16px;font-weight:700;color:var(--blue)}
 .thrust-body{flex:999 1 480px;min-width:0}
 .thrust-body p{color:var(--ink-2)}
-.thrust-fig{flex:1 1 320px;min-width:0}
+.thrust-fig{flex:1 1 400px;min-width:0;margin:0}
+.thrust-fig img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);background:#fff}
+.thrust-fig a{display:block}
+.thrust-fig figcaption{margin-top:8px;font-size:13px;color:var(--muted);text-align:right}
 .topics{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-direction:column;gap:14px}
 .topics li{position:relative;padding-left:22px;color:var(--ink-2)}
 .topics li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:2px;background:var(--accent)}
