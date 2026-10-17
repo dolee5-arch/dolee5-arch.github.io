@@ -231,3 +231,18 @@ a.pub:hover{background:rgba(31,122,51,.04);color:var(--ink)}
 .timeline li{grid-template-columns:140px minmax(0,1fr);padding:12px 0}
 .prof-title{font-size:18px}
 .prof-contact{font-size:16px}
+
+/* student cards v2 */
+.scards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px}
+.scard{background:var(--paper);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(21,32,28,.04),0 8px 24px rgba(21,32,28,.06);transition:transform .2s ease,box-shadow .2s ease}
+.scard:hover{transform:translateY(-4px);box-shadow:0 2px 4px rgba(21,32,28,.06),0 16px 36px rgba(21,32,28,.10)}
+.scard img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;display:block;background:var(--sand)}
+.scard-body{padding:24px 26px 26px;display:flex;flex-direction:column;flex:1}
+.scard-name{font-size:26px;font-weight:700;letter-spacing:-.025em;line-height:1.2}
+.scard-name span{font-size:19px;font-weight:500;color:var(--muted);margin-left:6px;letter-spacing:0}
+.scard-role{align-self:flex-start;margin-top:10px;font-size:14px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);padding:5px 12px;border-radius:999px}
+.scard-label{margin-top:20px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.scard-topic{margin:6px 0 18px;font-size:18.5px;line-height:1.55;color:var(--ink);font-weight:500}
+.scard-mail{margin-top:auto;font-size:16px;font-weight:500;text-decoration:none;color:var(--accent)}
+.scard-mail:hover{text-decoration:underline}
+body{word-break:keep-all;overflow-wrap:break-word}
