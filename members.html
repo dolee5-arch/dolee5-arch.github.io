@@ -7,10 +7,8 @@
 <meta name="description" content="Prof. Doohwan Lee (이두환), students and alumni of the Green Energy & Catalysis Lab, Department of Chemical Engineering, University of Seoul.">
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=20261017">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/style.css?v=20261017b">
 </head>
 <body>
 
@@ -27,17 +25,15 @@
 </header>
 
 <main>
-<section class="page-hero dark">
-  <svg class="hexbg" width="100%" height="100%" aria-hidden="true"><defs><pattern id="hex" width="56" height="97" patternUnits="userSpaceOnUse"><path d="M28 0 L56 16 L56 48.5 L28 64.5 L0 48.5 L0 16 Z M28 64.5 L28 97" fill="none" stroke="#C9DACF" stroke-width="1.2"/></pattern></defs><rect width="100%" height="100%" fill="url(#hex)"/></svg>
-  <div class="wrap" style="position:relative">
-    <p class="eyebrow">Members</p>
-    <h1>People of the lab</h1>
-    <p class="lead"><a href="#pi">Principal Investigator</a> · <a href="#students">Students</a> · <a href="#alumni">Alumni</a></p>
+<section class="page-head">
+  <div class="wrap">
+    <h1>Members</h1>
+    <nav class="page-nav" aria-label="On this page"><a href="#pi">Principal Investigator</a><a href="#students">Students</a><a href="#alumni">Alumni</a></nav>
   </div>
 </section>
 
 <!-- PRINCIPAL INVESTIGATOR -->
-<section id="pi" class="pi-section" style="scroll-margin-top:96px">
+<section id="pi" class="pi-section" style="scroll-margin-top:110px">
   <div class="wrap prof">
     <div class="prof-photo">
       <img src="assets/img/doohwan-lee-2026.jpg" alt="Prof. Doohwan Lee" width="560" height="700">
@@ -48,12 +44,11 @@
       <p class="prof-title">Professor, Department of Chemical Engineering, University of Seoul<br>이두환 교수 · 서울시립대학교 화학공학과</p>
       <p class="prof-contact"><a href="mailto:dolee@uos.ac.kr">dolee@uos.ac.kr</a><span aria-hidden="true">·</span><span>Office +82-2-6490-2371</span></p>
       <ol class="timeline">
-        <li><div class="when">Mar 2010 – Present</div><div class="what">Professor, Department of Chemical Engineering</div><div class="where">University of Seoul, Seoul, Korea</div></li>
-        <li><div class="when">Feb 2016 – Feb 2017</div><div class="what">Visiting Scientist</div><div class="where">US Department of Energy</div></li>
-        <li><div class="when">Dec 2004 – Feb 2010</div><div class="what">Samsung Advanced Institute of Technology</div><div class="where">Samsung Electronics, Yongin, Korea</div></li>
-        <li><div class="when">Nov 2003 – Nov 2004</div><div class="what">Postdoctoral Research Associate</div><div class="where">University of California, Berkeley, CA</div></li>
-        <li><div class="when">2003</div><div class="what">Ph.D., Chemical Engineering</div><div class="where">Virginia Polytechnic Institute and State University</div></li>
-        <li><div class="when">Jan 1998 – Nov 2003</div><div class="what">Research Associate</div><div class="where">Virginia Polytechnic Institute and State University, Blacksburg, VA</div></li>
+        <li><div class="when">2010 – Present</div><div class="row"><span class="org">University of Seoul, Seoul, Korea</span><span class="role">Professor, Department of Chemical Engineering</span></div></li>
+        <li><div class="when">2016 – 2017</div><div class="row"><span class="org">US Department of Energy, USA</span><span class="role">Visiting Scientist</span></div></li>
+        <li><div class="when">2005 – 2010</div><div class="row"><span class="org">Samsung Advanced Institute of Technology (SAIT), Yongin, Korea</span><span class="role">Research Staff Member</span></div></li>
+        <li><div class="when">2003 – 2004</div><div class="row"><span class="org">University of California, Berkeley, CA, USA</span><span class="role">Postdoctoral Research Associate</span></div></li>
+        <li><div class="when">2003</div><div class="row"><span class="org">Virginia Polytechnic Institute and State University, Blacksburg, VA, USA</span><span class="role">Ph.D., Chemical Engineering</span></div></li>
       </ol>
     </div>
   </div>
@@ -62,7 +57,6 @@
 <!-- STUDENTS -->
 <section id="students" class="sand" style="scroll-margin-top:96px">
   <div class="wrap">
-    <p class="eyebrow">Students</p>
     <h2 class="subhead">Current students</h2>
     <!-- 구성원 추가: <article class="student"> 블록을 복사하세요. 사진은 assets/img/ 에 올리고 img 줄의 파일명을 바꾸면 됩니다 -->
     <div class="students">
@@ -101,7 +95,6 @@
 <!-- ALUMNI -->
 <section id="alumni" style="scroll-margin-top:96px">
   <div class="wrap">
-    <p class="eyebrow">Alumni</p>
     <h2 class="subhead">Alumni</h2>
     <!-- 졸업생 추가: 해당 학위 목록에 <li>이름</li> 한 줄을 추가하세요 -->
     <div class="alumni-group">
