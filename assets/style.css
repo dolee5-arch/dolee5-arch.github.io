@@ -265,3 +265,4 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .al-name{font-weight:600;color:var(--ink)}
 .al-meta{color:var(--ink-2)}
 @media (max-width:640px){.alumni-rows{grid-template-columns:1fr}}
+.al-ko{color:var(--ink);font-weight:500;margin-left:2px}
