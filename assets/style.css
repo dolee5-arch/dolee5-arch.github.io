@@ -510,3 +510,12 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .matgrid p{margin:0;font-size:15.5px;line-height:1.6}
 @media (max-width:1000px){.area-links{grid-template-columns:1fr}}
 @media (max-width:760px){.figpair,.matgrid{grid-template-columns:1fr}}
+
+/* catalyst design figure (user-provided result image) */
+.catfig{display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:20px 44px;align-items:center;margin-top:18px;max-width:1080px}
+.catfig figure{margin:0;padding:12px;background:#fff}
+.catfig img{display:block;width:100%;height:auto;border-radius:8px}
+.catfig a{display:block}
+.catfig-text p{margin:0 0 12px}
+.catfig-cap{font-size:14px;color:var(--muted) !important}
+@media (max-width:900px){.catfig{grid-template-columns:1fr}.catfig figure{max-width:440px}}
