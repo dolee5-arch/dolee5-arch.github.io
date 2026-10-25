@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/style.css?v=20261025b">
+<link rel="stylesheet" href="assets/style.css?v=20261025c">
 </head>
 <body>
 
@@ -41,20 +41,26 @@
       <p class="area-q">Flow batteries that store renewable electricity safely, at any scale, for decades.</p>
     </header>
 
-    <h3 class="sub-title">What sets flow batteries apart</h3>
-    <p class="sub-lead">Solar and wind power rise and fall with the weather, so a grid that runs on them needs storage that is safe to place anywhere, easy to scale up and built to last. Flow batteries meet these needs in ways that lithium-ion batteries cannot.</p>
-    <ul class="merits">
-      <li><h4>Safe from fire and explosion</h4><p>The electrolyte is water-based and does not burn, so there is no thermal runaway. Systems can sit next to buildings, substations and people.</p></li>
-      <li><h4>Easy to scale</h4><p>Energy is set by the size of the tanks and power by the cell stack, so each can be expanded on its own, from a single building to grid storage of hundreds of megawatt-hours.</p></li>
-      <li><h4>Long life</h4><p>The active materials stay dissolved and do not crack or change phase, so a system can run more than 10,000 cycles and last for decades.</p></li>
-      <li><h4>Reusable electrolyte</h4><p>The electrolyte can be rebalanced, topped up or recovered at the end of life instead of being discarded with the battery.</p></li>
+    <ul class="glance" aria-label="Research topics">
+      <li><a href="#es-materials"><span class="gk">Storage materials and chemistry</span><span class="gv">Nano-electrofluids, redox targeting, redox mediators</span></a></li>
+      <li><a href="#es-electrodes"><span class="gk">Electrode materials</span><span class="gv">Defect-engineered and doped carbon electrodes, electrokinetics</span></a></li>
+      <li><a href="#es-cells"><span class="gk">Flow cell reactors</span><span class="gv">Cell design, operando analysis of voltage losses</span></a></li>
     </ul>
 
-    <figure class="principle">
-      <div class="panels">
-        <div class="panel">
-          <p class="panel-title">How a flow battery works</p>
-          <svg viewBox="0 0 520 380" role="img" aria-labelledby="fb1t">
+    <div class="duo">
+      <div class="duo-text">
+        <h3>What sets flow batteries apart</h3>
+        <p>Solar and wind power rise and fall with the weather. A grid that runs on them needs storage that is safe to place anywhere, easy to scale up and built to last.</p>
+        <dl class="merits">
+          <div><dt>Safe from fire and explosion</dt><dd>Water-based electrolyte that does not burn. No thermal runaway.</dd></div>
+          <div><dt>Easy to scale</dt><dd>Tanks set the energy and the stack sets the power, so each grows on its own.</dd></div>
+          <div><dt>Long life</dt><dd>More than 10,000 cycles; the active materials do not crack or change phase.</dd></div>
+          <div><dt>Reusable electrolyte</dt><dd>Rebalanced, topped up or recovered instead of discarded.</dd></div>
+        </dl>
+      </div>
+      <figure class="duo-fig panel">
+        <figcaption class="panel-title">How a flow battery works</figcaption>
+        <svg viewBox="0 0 520 380" role="img" aria-labelledby="fb1t">
             <title id="fb1t">Flow battery: two electrolyte tanks are pumped through a cell stack connected to the grid. Tanks set the stored energy; the stack sets the power.</title>
             <g fill="none" stroke="#7C8A84" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
               <path d="M130 250 H200"/><path d="M226 110 V80 H75 V120"/>
@@ -84,40 +90,39 @@
               <text x="294" y="210" font-size="13" fill="#18652A" transform="rotate(-90 294 210)">electrode</text>
             </g>
           </svg>
-        </div>
-        <div class="panel">
-          <p class="panel-title">The limit: how much charge a liquid can hold</p>
-          <svg viewBox="0 0 520 380" role="img" aria-labelledby="lim1t">
+      </figure>
+    </div>
+
+    <div class="duo">
+      <div class="duo-text">
+        <h3>The challenge</h3>
+        <p>An electrolyte can dissolve only 1–2 moles of active material per litre, while solid battery materials pack about ten times more charge into the same volume. A vanadium flow battery therefore stores about 25 Wh per litre, a tenth of a lithium-ion battery.</p>
+        <p class="goal">Our goal is to bring the charge density of solids into a battery that still flows, without giving up its safety or scalability.</p>
+      </div>
+      <figure class="duo-fig panel">
+        <figcaption class="panel-title">How much charge a liquid can hold</figcaption>
+        <svg viewBox="0 0 520 280" role="img" aria-labelledby="lim1t">
             <title id="lim1t">Dissolved electrolytes hold about 1 to 2 moles of charge per litre, while solid battery materials hold about 20. Flow batteries therefore store about a tenth of the energy of lithium-ion batteries per volume.</title>
             <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C">
-              <text x="24" y="58" font-size="16" font-weight="700">Charge stored per litre</text>
-              <text x="24" y="80" font-size="14" fill="#4F5B57">moles of electrons, approximate</text>
+              <text x="24" y="40" font-size="16" font-weight="700">Charge stored per litre</text>
+              <text x="24" y="62" font-size="14" fill="#4F5B57">moles of electrons, approximate</text>
               <text x="24" y="128" font-size="15" font-weight="600">Dissolved ions in an electrolyte</text>
               <rect x="24" y="138" width="40" height="34" rx="4" fill="#2F5C9C"/>
               <text x="74" y="161" font-size="15" font-weight="700" fill="#2F5C9C">1–2</text>
               <text x="24" y="216" font-size="15" font-weight="600">Solid battery materials</text>
               <rect x="24" y="226" width="440" height="34" rx="4" fill="#1F7A33"/>
               <text x="452" y="249" font-size="15" font-weight="700" fill="#fff" text-anchor="end">about 20</text>
-              <path d="M24 290 H464" stroke="#C8D2CD" stroke-width="1.5"/>
-              <text x="24" y="322" font-size="16" font-weight="700">Our goal: bring the charge density of solids</text>
-              <text x="24" y="344" font-size="16" font-weight="700">into a battery that still flows.</text>
             </g>
           </svg>
-        </div>
-      </div>
-      <figcaption>Left: energy and power are sized separately. Right: dissolved active material limits a flow battery to about a tenth of the energy of a lithium-ion battery of the same volume.</figcaption>
-    </figure>
-
-    <div class="challenge">
-      <h3>The challenge</h3>
-      <p>An electrolyte can dissolve only 1–2 moles of active material per litre, while solid battery materials pack about ten times more charge into the same volume. That is why a vanadium flow battery stores about 25 Wh per litre, a tenth of a lithium-ion battery, and needs large tanks. Closing this gap, while keeping the safety and scalability of a flowing liquid, is the central problem we work on.</p>
+      </figure>
     </div>
 
-    <h3 class="approach-title">Two ways we bring solid-level capacity into a flowing battery</h3>
-
+    <div class="topic" id="es-materials">
+      <p class="topic-k">Storage materials and chemistry</p>
+      <h3>Two ways to put solid-level capacity into a flowing battery</h3>
+    </div>
     <article class="strategy">
-      <div class="panel">
-        <p class="panel-title">Nano-electrofluid: particles that flow and react</p>
+      <figure class="panel">
         <svg viewBox="0 0 520 380" role="img" aria-labelledby="nef1t">
           <title id="nef1t">Nano-electrofluid: redox-active nanoparticles with a surface layer are dispersed in the electrolyte, flow to the electrode, and exchange electrons on contact.</title>
           <defs><marker id="ah5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3A4642"/></marker></defs>
@@ -145,18 +150,15 @@
           <text x="356" y="30" font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="14" font-weight="700" fill="#15201C">Surface layer</text>
           <text x="356" y="47" font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="13" fill="#4F5B57">keeps particles apart</text>
         </svg>
-      </div>
+      </figure>
       <div class="strategy-text">
         <h4>Nano-electrofluids</h4>
-        <p>Instead of dissolving the active material, we disperse it as nanoparticles of a redox-active solid. Each particle stores charge in its solid lattice and gives up or takes electrons when it touches the electrode, so the fluid can carry far more charge than a solution while still being pumped like a liquid.</p>
-        <p>The difficulty is making the fluid behave. At high loading, nanoparticles tend to clump, settle and thicken the fluid, and charge has to reach particles that touch the electrode only briefly.</p>
-        <p class="we"><b>What we study.</b> Surface design rules that keep particles dispersed and the fluid pumpable at high loading, how charge moves between flowing particles and the electrode, and how these fluids perform in full flow cells.</p>
+        <p>We disperse the active material as nanoparticles of a redox-active solid. Each particle stores charge in its solid and exchanges electrons when it touches the electrode, so the fluid carries far more charge than a solution yet is still pumped like a liquid.</p>
+        <p class="we"><b>What we study</b> Surface design that keeps particles dispersed and the fluid pumpable at high loading, and how charge moves between flowing particles and the electrode.</p>
       </div>
     </article>
-
     <article class="strategy">
-      <div class="panel">
-        <p class="panel-title">Redox targeting: a mediator carries charge to a solid</p>
+      <figure class="panel">
         <svg viewBox="0 0 520 380" role="img" aria-labelledby="rt1t">
           <title id="rt1t">Redox targeting during charging: a dissolved mediator is oxidized at the electrode, flows to the tank and oxidizes the solid stored there, then returns. Discharge runs in reverse. The mediator potential must match the solid.</title>
           <defs><marker id="ah6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#B9801A"/></marker></defs>
@@ -190,20 +192,60 @@
             <text x="16" y="372" font-size="13" fill="#4F5B57">Charging shown; discharge runs in reverse.</text>
           </g>
         </svg>
-      </div>
+      </figure>
       <div class="strategy-text">
-        <h4>Redox targeting (redox mediation)</h4>
-        <p>Here the solid storage material never leaves the tank. A dissolved redox mediator is charged at the electrode, flows to the tank and passes its charge to the solid by a chemical reaction, then returns to be charged again. On discharge the process runs in reverse. Only a clear liquid is pumped, yet the solid in the tank sets the capacity, which can be several times that of the electrolyte alone.</p>
-        <p>Because the solid never touches the electrode, it does not need to conduct electricity and there is no slurry to clog the cell. The catch is that the mediator's potential must closely match the solid's: a mismatch of only a few tens of millivolts leaves much of the solid unused or costs extra voltage.</p>
-        <p class="we"><b>What we study.</b> Pairs of mediators and solid materials that match well, and redox-mediating chemistry that raises the usable capacity of flow batteries.</p>
+        <h4>Redox targeting</h4>
+        <p>The solid stays in the tank. A dissolved mediator is charged at the electrode, flows to the tank and passes its charge to the solid, then returns. Only a clear liquid is pumped, yet the solid sets the capacity, and it does not need to conduct electricity.</p>
+        <p class="we"><b>What we study</b> Mediator and solid pairs whose potentials match closely, and redox-mediating chemistry that raises usable capacity.</p>
       </div>
     </article>
 
-    <h3 class="approach-title">Making the cell itself work better</h3>
-    <ol class="approach">
-      <li><div><h4>Electrode design and electrokinetics</h4><p>The reactions take place on the surface of carbon fiber electrodes. We engineer surface defects and heteroatom dopants and measure how each changes the reaction rate. Our studies show that defect sites, more than oxygen groups, control vanadium redox kinetics.</p></div></li>
-      <li><div><h4>Flow cell design and operando analysis</h4><p>We design flow cells and measure, while they run, how much voltage is lost at each electrode and at the membrane. Knowing where the losses occur tells us which component to improve next.</p></div></li>
-    </ol>
+    <div class="pair">
+      <article id="es-electrodes">
+        <p class="topic-k">Electrode materials</p>
+        <h3>Faster reactions at the electrode surface</h3>
+        <p>We engineer defects and heteroatom dopants on carbon electrodes and measure how each changes the reaction rate. Defect sites, more than oxygen groups, control vanadium redox kinetics.</p>
+        <figure class="panel"><svg viewBox="0 0 520 300" role="img" aria-labelledby="el1t">
+            <title id="el1t">Carbon fiber electrode surface with defect sites and dopant atoms where vanadium ions react faster.</title>
+            <defs><marker id="ah7" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3A4642"/></marker></defs>
+            <path d="M10 200 H120 l12 -14 l12 14 H300 l12 -14 l12 14 H510 V280 H10Z" fill="#4A5550"/>
+            <g fill="#8ED18E"><circle cx="132" cy="192" r="6"/><circle cx="312" cy="192" r="6"/></g>
+            <g fill="#9DB8E3" stroke="#2F5C9C" stroke-width="2"><circle cx="220" cy="200" r="8"/><circle cx="420" cy="200" r="8"/></g>
+            <g fill="#2F5C9C"><circle cx="150" cy="110" r="11"/><circle cx="330" cy="96" r="11"/></g>
+            <path d="M150 124 Q 140 160 134 182" fill="none" stroke="#3A4642" stroke-width="2.5" stroke-dasharray="5 5" marker-end="url(#ah7)"/>
+            <path d="M330 110 Q 320 150 314 182" fill="none" stroke="#3A4642" stroke-width="2.5" stroke-dasharray="5 5" marker-end="url(#ah7)"/>
+            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C">
+              <text x="260" y="250" text-anchor="middle" font-size="16" font-weight="600" fill="#fff">Carbon fiber electrode</text>
+              <text x="24" y="40" font-size="16" font-weight="700">V ions react faster at</text>
+              <text x="24" y="62" font-size="16" font-weight="700">engineered surface sites</text>
+              <g font-size="14"><circle cx="372" cy="36" r="6" fill="#8ED18E"/><text x="384" y="41">defect site</text>
+              <circle cx="372" cy="62" r="7" fill="#9DB8E3" stroke="#2F5C9C" stroke-width="2"/><text x="384" y="67">dopant atom</text></g>
+            </g>
+          </svg></figure>
+      </article>
+      <article id="es-cells">
+        <p class="topic-k">Flow cell reactors</p>
+        <h3>Finding where the voltage is lost</h3>
+        <p>We design flow cells and separate, while they run, the voltage lost at each electrode and at the membrane, so we know which component to improve next.</p>
+        <figure class="panel"><svg viewBox="0 0 520 300" role="img" aria-labelledby="vl1t">
+            <title id="vl1t">Operando analysis splits the voltage lost in a running cell into losses at the negative electrode, the positive electrode and the membrane.</title>
+            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C">
+              <text x="24" y="40" font-size="16" font-weight="700">Where the voltage goes, measured while the cell runs</text>
+              <rect x="24" y="70" width="300" height="44" rx="6" fill="#DCEBDD"/>
+              <rect x="324" y="70" width="60" height="44" fill="#2F5C9C"/>
+              <rect x="384" y="70" width="46" height="44" fill="#1F7A33"/>
+              <rect x="430" y="70" width="66" height="44" rx="0" fill="#B9801A"/>
+              <text x="40" y="98" font-size="15" font-weight="600" fill="#18652A">useful cell voltage</text>
+              <g font-size="14">
+              <rect x="24" y="150" width="14" height="14" rx="3" fill="#2F5C9C"/><text x="46" y="162">loss at the negative electrode</text>
+              <rect x="24" y="178" width="14" height="14" rx="3" fill="#1F7A33"/><text x="46" y="190">loss at the positive electrode</text>
+              <rect x="24" y="206" width="14" height="14" rx="3" fill="#B9801A"/><text x="46" y="218">loss across the membrane</text></g>
+              <text x="24" y="262" font-size="15" fill="#4F5B57">Knowing which loss is largest shows</text>
+              <text x="24" y="282" font-size="15" fill="#4F5B57">which component to improve next.</text>
+            </g>
+          </svg></figure>
+      </article>
+    </div>
 
     <div class="area-foot">
       <div>
@@ -215,11 +257,6 @@
         <p>Synthesize nanomaterials and electrode materials, build and test flow cells, and analyze them with electrochemical methods such as cyclic voltammetry and impedance spectroscopy.</p>
       </div>
     </div>
-
-    <figure class="result">
-      <a href="assets/img/research-storage-v1.png" target="_blank" rel="noopener"><img src="assets/img/research-storage-v1.png" width="1222" height="805" alt="Flow battery schematic with impedance spectra of doped carbon electrodes and operando analysis of cell voltage losses" loading="lazy"></a>
-      <figcaption><b>From our work.</b> Impedance spectra of doped carbon electrodes and cell voltage losses separated by operando analysis. Click to enlarge.</figcaption>
-    </figure>
   </div>
 </section>
 

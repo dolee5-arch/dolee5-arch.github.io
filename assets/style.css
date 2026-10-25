@@ -412,3 +412,33 @@ body{word-break:keep-all;overflow-wrap:break-word}
 @media (max-width:1100px){.merits{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:900px){.strategy{grid-template-columns:1fr}}
 @media (max-width:560px){.merits{grid-template-columns:1fr}}
+
+/* ---- Research: storage v3 layout (2026-10-25) ---- */
+.glance{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.glance a{display:flex;flex-direction:column;gap:4px;height:100%;padding:16px 18px;border-radius:12px;background:var(--accent-soft);text-decoration:none;color:var(--ink);border:1px solid transparent}
+.glance a:hover{border-color:var(--accent)}
+.glance .gk{font-weight:700;font-size:17px;color:var(--accent-ink)}
+.glance .gv{font-size:15px;color:var(--ink-2);line-height:1.5}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:28px 56px;align-items:center;margin-top:56px}
+.duo-text p{margin:0 0 12px}
+.duo-fig{margin:0}
+.panel > figcaption.panel-title{margin:0 0 6px;font-weight:700;color:var(--ink);font-size:15px}
+.merits{margin:18px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px}
+.merits > div{border-top:3px solid var(--accent);padding-top:10px}
+.merits dt{font-weight:700;font-size:16px;color:var(--ink)}
+.merits dd{margin:4px 0 0;font-size:15px;color:var(--ink-2);line-height:1.55}
+.goal{font-weight:600;color:var(--accent-ink) !important}
+.topic{margin-top:72px}
+.topic-k{margin:0 0 4px !important;font-size:14px;font-weight:700;color:var(--blue) !important;letter-spacing:.01em}
+.topic h3,.pair h3{font-size:22px !important;margin:0 0 4px}
+.strategy{grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:20px 48px;align-items:center;margin-top:24px;padding-top:24px}
+.strategy figure.panel{margin:0}
+.strategy h4{font-size:19px}
+.strategy .we{padding:10px 14px;font-size:15.5px}
+.strategy .we b{display:block;margin-bottom:2px}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 48px;margin-top:72px}
+.pair article p{margin:0 0 16px;max-width:520px}
+.pair figure.panel{margin:0;max-width:440px}
+#storage .area-foot{margin-top:64px;padding-top:28px;border-top:1px solid var(--line-2)}
+@media (max-width:1000px){.glance{grid-template-columns:1fr}.duo,.strategy,.pair{grid-template-columns:1fr}.duo-fig,.strategy figure.panel{max-width:480px}}
+@media (max-width:560px){.merits{grid-template-columns:1fr}}
