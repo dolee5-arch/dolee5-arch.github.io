@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/style.css?v=20261025a">
+<link rel="stylesheet" href="assets/style.css?v=20261025b">
 </head>
 <body>
 
@@ -38,20 +38,17 @@
   <div class="wrap">
     <header class="area-head">
       <h2>Electrochemical energy storage</h2>
-      <p class="area-q">Making flow batteries a safe, long-lasting place to store renewable electricity.</p>
+      <p class="area-q">Flow batteries that store renewable electricity safely, at any scale, for decades.</p>
     </header>
 
-    <div class="area-intro">
-      <div>
-        <h3>Why it matters</h3>
-        <p>Solar and wind power rise and fall with the weather, so a grid that runs on them needs storage measured in hours and megawatt-hours. Lithium-ion batteries dominate today, but at this scale their fire risk, cost and limited cycle life become serious problems.</p>
-        <p>In a flow battery, energy is stored in liquid electrolytes kept in external tanks and converted to electricity in a separate cell stack. The water-based electrolytes do not burn, energy and power can be sized independently, and the active materials do not wear out the way lithium-ion electrodes do.</p>
-      </div>
-      <div>
-        <h3>The challenge</h3>
-        <p>A flow battery holds only about a tenth of the energy of a lithium-ion battery of the same volume, because the electrolyte can dissolve only so much active material. Part of the energy is also lost as voltage losses inside the cell. Raising energy density and efficiency is what will make flow batteries competitive for large-scale storage.</p>
-      </div>
-    </div>
+    <h3 class="sub-title">What sets flow batteries apart</h3>
+    <p class="sub-lead">Solar and wind power rise and fall with the weather, so a grid that runs on them needs storage that is safe to place anywhere, easy to scale up and built to last. Flow batteries meet these needs in ways that lithium-ion batteries cannot.</p>
+    <ul class="merits">
+      <li><h4>Safe from fire and explosion</h4><p>The electrolyte is water-based and does not burn, so there is no thermal runaway. Systems can sit next to buildings, substations and people.</p></li>
+      <li><h4>Easy to scale</h4><p>Energy is set by the size of the tanks and power by the cell stack, so each can be expanded on its own, from a single building to grid storage of hundreds of megawatt-hours.</p></li>
+      <li><h4>Long life</h4><p>The active materials stay dissolved and do not crack or change phase, so a system can run more than 10,000 cycles and last for decades.</p></li>
+      <li><h4>Reusable electrolyte</h4><p>The electrolyte can be rebalanced, topped up or recovered at the end of life instead of being discarded with the battery.</p></li>
+    </ul>
 
     <figure class="principle">
       <div class="panels">
@@ -66,9 +63,6 @@
             <g stroke="#3A4642" stroke-width="2.5" fill="none"><path d="M215 300 V334"/><path d="M305 300 V334"/></g>
             <rect x="20" y="120" width="110" height="170" rx="16" fill="#E2ECF8" stroke="#2F5C9C" stroke-width="2.5"/>
             <rect x="390" y="120" width="110" height="170" rx="16" fill="#E3F1E4" stroke="#1F7A33" stroke-width="2.5"/>
-            <g fill="#2F5C9C"><circle cx="48" cy="200" r="7"/><circle cx="78" cy="186" r="7"/><circle cx="104" cy="210" r="7"/><circle cx="58" cy="236" r="7"/><circle cx="92" cy="250" r="7"/><circle cx="110" cy="176" r="7"/><circle cx="40" cy="262" r="7"/></g>
-            <g fill="#7C8A84"><rect x="404" y="244" width="22" height="22" rx="3"/><rect x="430" y="248" width="22" height="18" rx="3"/><rect x="456" y="242" width="24" height="24" rx="3"/><rect x="416" y="222" width="20" height="18" rx="3"/><rect x="442" y="224" width="22" height="18" rx="3"/></g>
-            <g fill="#1F7A33"><circle cx="420" cy="180" r="4"/><circle cx="452" cy="196" r="4"/><circle cx="478" cy="172" r="4"/></g>
             <rect x="200" y="110" width="52" height="190" fill="#DCEBDD" stroke="#1F7A33" stroke-width="2"/>
             <rect x="268" y="110" width="52" height="190" fill="#DCEBDD" stroke="#1F7A33" stroke-width="2"/>
             <rect x="252" y="110" width="16" height="190" fill="#B8C2BD"/>
@@ -80,76 +74,141 @@
               <text x="260" y="358" font-size="16" font-weight="600">Solar, wind and grid</text>
               <text x="260" y="34" font-size="18" font-weight="700">Cell stack</text>
               <text x="260" y="56" font-size="15" fill="#4F5B57">sets the power</text>
-              <text x="75" y="320" font-size="18" font-weight="700">Tanks</text>
-              <text x="75" y="342" font-size="15" fill="#4F5B57">set the energy</text>
-              <text x="445" y="320" font-size="18" font-weight="700">Tanks</text>
-              <text x="445" y="342" font-size="15" fill="#4F5B57">set the energy</text>
-              <text x="75" y="150" font-size="26" font-weight="700" fill="#2F5C9C">+</text>
-              <text x="445" y="152" font-size="26" font-weight="700" fill="#1F7A33">−</text>
-            </g>
-            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#fff">
-              <circle cx="40" cy="104" r="13" fill="#1F7A33"/><text x="40" y="109">1</text>
-              <circle cx="480" cy="104" r="13" fill="#1F7A33"/><text x="480" y="109">2</text>
-              <circle cx="226" cy="206" r="13" fill="#1F7A33"/><text x="226" y="211">3</text>
-              <circle cx="340" cy="128" r="13" fill="#1F7A33"/><text x="340" y="133">4</text>
+              <text x="75" y="320" font-size="18" font-weight="700">Tank</text>
+              <text x="75" y="342" font-size="15" fill="#4F5B57">sets the energy</text>
+              <text x="445" y="320" font-size="18" font-weight="700">Tank</text>
+              <text x="445" y="342" font-size="15" fill="#4F5B57">sets the energy</text>
+              <text x="75" y="214" font-size="30" font-weight="700" fill="#2F5C9C">+</text>
+              <text x="445" y="214" font-size="30" font-weight="700" fill="#1F7A33">−</text>
+              <text x="226" y="210" font-size="13" fill="#18652A" transform="rotate(-90 226 210)">electrode</text>
+              <text x="294" y="210" font-size="13" fill="#18652A" transform="rotate(-90 294 210)">electrode</text>
             </g>
           </svg>
         </div>
         <div class="panel">
-          <p class="panel-title">Where we work, at the electrode surface</p>
-          <svg viewBox="0 0 520 380" role="img" aria-labelledby="fb2t">
-            <title id="fb2t">At the carbon fiber electrode: nanoparticles carry charge, vanadium ions react at defect sites, and redox mediators carry charge to solid storage materials.</title>
-            <defs><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3A4642"/></marker></defs>
-            <path d="M10 290 H226 l10 -12 l10 12 H335 l10 -12 l10 12 H510 V350 H10Z" fill="#4A5550"/>
-            <circle cx="236" cy="284" r="5" fill="#8ED18E"/><circle cx="345" cy="284" r="5" fill="#8ED18E"/>
-            <text x="260" y="330" text-anchor="middle" font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="16" font-weight="600" fill="#fff">Carbon fiber electrode</text>
-            <circle cx="85" cy="210" r="34" fill="#E2ECF8" stroke="#2F5C9C" stroke-width="2.5"/>
-            <circle cx="85" cy="210" r="22" fill="#B9CDEB"/>
-            <path d="M85 248 V282" stroke="#3A4642" stroke-width="2.5" marker-end="url(#ah1)"/>
-            <circle cx="255" cy="200" r="11" fill="#2F5C9C"/><circle cx="215" cy="160" r="11" fill="#2F5C9C"/>
-            <path d="M250 212 Q 228 248 236 276" fill="none" stroke="#3A4642" stroke-width="2.5" stroke-dasharray="5 5" marker-end="url(#ah1)"/>
-            <g fill="#7C8A84"><rect x="410" y="60" width="34" height="34" rx="4"/><rect x="448" y="66" width="30" height="28" rx="4"/><rect x="428" y="98" width="32" height="28" rx="4"/></g>
-            <circle cx="372" cy="230" r="13" fill="#F2B544" stroke="#B9801A" stroke-width="2"/>
-            <circle cx="420" cy="160" r="13" fill="#F2B544" stroke="#B9801A" stroke-width="2"/>
-            <path d="M362 246 Q 348 264 346 276" fill="none" stroke="#3A4642" stroke-width="2.5" marker-end="url(#ah1)"/>
-            <path d="M380 214 L410 176" fill="none" stroke="#3A4642" stroke-width="2.5" marker-end="url(#ah1)"/>
-            <path d="M430 145 L438 130" fill="none" stroke="#3A4642" stroke-width="2.5" marker-end="url(#ah1)"/>
+          <p class="panel-title">The limit: how much charge a liquid can hold</p>
+          <svg viewBox="0 0 520 380" role="img" aria-labelledby="lim1t">
+            <title id="lim1t">Dissolved electrolytes hold about 1 to 2 moles of charge per litre, while solid battery materials hold about 20. Flow batteries therefore store about a tenth of the energy of lithium-ion batteries per volume.</title>
             <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C">
-              <text x="30" y="132" font-size="16" font-weight="700">Nanoparticle</text>
-              <text x="30" y="152" font-size="14" fill="#4F5B57">stores charge</text>
-              <text x="190" y="118" font-size="16" font-weight="700">V ion</text>
-              <text x="190" y="138" font-size="14" fill="#4F5B57">reacts at a defect</text>
-              <text x="300" y="60" font-size="16" font-weight="700">Mediator</text>
-              <text x="300" y="80" font-size="14" fill="#4F5B57">carries charge</text>
-              <text x="300" y="98" font-size="14" fill="#4F5B57">to the solid</text>
-              <text x="444" y="46" font-size="14" fill="#4F5B57" text-anchor="middle">solid in tank</text>
-              <text x="96" y="275" font-size="15" font-weight="600">e⁻</text>
-              <text x="206" y="266" font-size="15" font-weight="600">e⁻</text>
-              <text x="314" y="266" font-size="15" font-weight="600">e⁻</text>
-            </g>
-            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#fff">
-              <circle cx="132" cy="186" r="13" fill="#1F7A33"/><text x="132" y="191">1</text>
-              <circle cx="404" cy="246" r="13" fill="#1F7A33"/><text x="404" y="251">2</text>
-              <circle cx="286" cy="176" r="13" fill="#1F7A33"/><text x="286" y="181">3</text>
+              <text x="24" y="58" font-size="16" font-weight="700">Charge stored per litre</text>
+              <text x="24" y="80" font-size="14" fill="#4F5B57">moles of electrons, approximate</text>
+              <text x="24" y="128" font-size="15" font-weight="600">Dissolved ions in an electrolyte</text>
+              <rect x="24" y="138" width="40" height="34" rx="4" fill="#2F5C9C"/>
+              <text x="74" y="161" font-size="15" font-weight="700" fill="#2F5C9C">1–2</text>
+              <text x="24" y="216" font-size="15" font-weight="600">Solid battery materials</text>
+              <rect x="24" y="226" width="440" height="34" rx="4" fill="#1F7A33"/>
+              <text x="452" y="249" font-size="15" font-weight="700" fill="#fff" text-anchor="end">about 20</text>
+              <path d="M24 290 H464" stroke="#C8D2CD" stroke-width="1.5"/>
+              <text x="24" y="322" font-size="16" font-weight="700">Our goal: bring the charge density of solids</text>
+              <text x="24" y="344" font-size="16" font-weight="700">into a battery that still flows.</text>
             </g>
           </svg>
         </div>
       </div>
-      <figcaption>Energy is stored in the electrolyte tanks and converted in the cell stack. Numbers mark where each of our approaches acts.</figcaption>
+      <figcaption>Left: energy and power are sized separately. Right: dissolved active material limits a flow battery to about a tenth of the energy of a lithium-ion battery of the same volume.</figcaption>
     </figure>
 
-    <h3 class="approach-title">Our approach</h3>
+    <div class="challenge">
+      <h3>The challenge</h3>
+      <p>An electrolyte can dissolve only 1–2 moles of active material per litre, while solid battery materials pack about ten times more charge into the same volume. That is why a vanadium flow battery stores about 25 Wh per litre, a tenth of a lithium-ion battery, and needs large tanks. Closing this gap, while keeping the safety and scalability of a flowing liquid, is the central problem we work on.</p>
+    </div>
+
+    <h3 class="approach-title">Two ways we bring solid-level capacity into a flowing battery</h3>
+
+    <article class="strategy">
+      <div class="panel">
+        <p class="panel-title">Nano-electrofluid: particles that flow and react</p>
+        <svg viewBox="0 0 520 380" role="img" aria-labelledby="nef1t">
+          <title id="nef1t">Nano-electrofluid: redox-active nanoparticles with a surface layer are dispersed in the electrolyte, flow to the electrode, and exchange electrons on contact.</title>
+          <defs><marker id="ah5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3A4642"/></marker></defs>
+          <rect x="16" y="70" width="380" height="230" rx="18" fill="#EEF4FB" stroke="#2F5C9C" stroke-width="2"/>
+          <rect x="396" y="60" width="44" height="250" fill="#4A5550"/>
+          <text x="418" y="150" text-anchor="middle" font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="15" font-weight="600" fill="#fff" transform="rotate(-90 418 150)">Electrode</text>
+          <g fill="#B9CDEB" stroke="#2F5C9C" stroke-width="2.5">
+            <circle cx="60" cy="110" r="14"/><circle cx="110" cy="150" r="14"/><circle cx="56" cy="190" r="14"/><circle cx="150" cy="104" r="14"/><circle cx="100" cy="240" r="14"/><circle cx="170" cy="200" r="14"/><circle cx="210" cy="140" r="14"/><circle cx="160" cy="268" r="14"/><circle cx="230" cy="250" r="14"/><circle cx="260" cy="190" r="14"/><circle cx="280" cy="110" r="14"/><circle cx="310" cy="250" r="14"/><circle cx="330" cy="160" r="14"/>
+          </g>
+          <g fill="none" stroke="#9DB8E3" stroke-width="5" opacity=".55">
+            <circle cx="60" cy="110" r="20"/><circle cx="110" cy="150" r="20"/><circle cx="56" cy="190" r="20"/><circle cx="150" cy="104" r="20"/><circle cx="100" cy="240" r="20"/><circle cx="170" cy="200" r="20"/><circle cx="210" cy="140" r="20"/><circle cx="160" cy="268" r="20"/><circle cx="230" cy="250" r="20"/><circle cx="260" cy="190" r="20"/><circle cx="280" cy="110" r="20"/><circle cx="310" cy="250" r="20"/><circle cx="330" cy="160" r="20"/>
+          </g>
+          <circle cx="376" cy="262" r="14" fill="#1F7A33" stroke="#18652A" stroke-width="2.5"/>
+          <circle cx="376" cy="262" r="20" fill="none" stroke="#8ED18E" stroke-width="5" opacity=".6"/>
+          <path d="M30 336 H380" stroke="#3A4642" stroke-width="3" marker-end="url(#ah5)"/>
+          <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C">
+            <text x="16" y="34" font-size="16" font-weight="700">Redox-active nanoparticles</text>
+            <text x="16" y="54" font-size="14" fill="#4F5B57">each one stores charge in its solid</text>
+            <text x="30" y="364" font-size="15" fill="#4F5B57">the fluid is pumped through the cell</text>
+            <text x="452" y="250" font-size="16" font-weight="700">e⁻</text>
+            <text x="448" y="284" font-size="13" fill="#4F5B57">on contact</text>
+          </g>
+          <path d="M444 262 L500 262" stroke="#3A4642" stroke-width="2.5" marker-end="url(#ah5)"/>
+          <path d="M286 72 C 300 40 330 34 352 34" fill="none" stroke="#3A4642" stroke-width="1.5"/>
+          <text x="356" y="30" font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="14" font-weight="700" fill="#15201C">Surface layer</text>
+          <text x="356" y="47" font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="13" fill="#4F5B57">keeps particles apart</text>
+        </svg>
+      </div>
+      <div class="strategy-text">
+        <h4>Nano-electrofluids</h4>
+        <p>Instead of dissolving the active material, we disperse it as nanoparticles of a redox-active solid. Each particle stores charge in its solid lattice and gives up or takes electrons when it touches the electrode, so the fluid can carry far more charge than a solution while still being pumped like a liquid. The same idea, often called a nano-electrofuel, has also been explored for refuelable batteries for vehicles.</p>
+        <p>The difficulty is making the fluid behave. At high loading, nanoparticles tend to clump, settle and thicken the fluid, and charge has to reach particles that touch the electrode only briefly.</p>
+        <p class="we"><b>What we study.</b> Surface design rules that keep particles dispersed and the fluid pumpable at high loading, how charge moves between flowing particles and the electrode, and how these fluids perform in full flow cells.</p>
+      </div>
+    </article>
+
+    <article class="strategy">
+      <div class="panel">
+        <p class="panel-title">Redox targeting: a mediator carries charge to a solid</p>
+        <svg viewBox="0 0 520 380" role="img" aria-labelledby="rt1t">
+          <title id="rt1t">Redox targeting during charging: a dissolved mediator is oxidized at the electrode, flows to the tank and oxidizes the solid stored there, then returns. Discharge runs in reverse. The mediator potential must match the solid.</title>
+          <defs><marker id="ah6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#B9801A"/></marker></defs>
+          <rect x="16" y="70" width="150" height="220" rx="16" fill="#F6F8F7" stroke="#3A4642" stroke-width="2"/>
+          <rect x="24" y="80" width="34" height="200" fill="#4A5550"/>
+          <rect x="340" y="70" width="164" height="220" rx="16" fill="#EEF4FB" stroke="#2F5C9C" stroke-width="2"/>
+          <g fill="#7C8A84"><rect x="360" y="190" width="36" height="34" rx="4"/><rect x="402" y="194" width="34" height="30" rx="4"/><rect x="442" y="186" width="40" height="38" rx="4"/><rect x="370" y="230" width="38" height="34" rx="4"/><rect x="414" y="232" width="34" height="32" rx="4"/><rect x="452" y="230" width="34" height="34" rx="4"/></g>
+          <path d="M350 176 H494" stroke="#2F5C9C" stroke-width="2" stroke-dasharray="5 4"/>
+          <path d="M166 120 H340" fill="none" stroke="#B9801A" stroke-width="3" marker-end="url(#ah6)"/>
+          <path d="M340 250 H166" fill="none" stroke="#B9801A" stroke-width="3" marker-end="url(#ah6)"/>
+          <circle cx="252" cy="120" r="15" fill="#F2B544" stroke="#B9801A" stroke-width="2"/>
+          <circle cx="252" cy="250" r="15" fill="#FBE3B0" stroke="#B9801A" stroke-width="2"/>
+          <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C">
+            <text x="252" y="125" font-size="13" font-weight="700" text-anchor="middle">M⁺</text>
+            <text x="252" y="255" font-size="13" font-weight="700" text-anchor="middle">M</text>
+            <text x="91" y="56" font-size="16" font-weight="700" text-anchor="middle">Cell</text>
+            <text x="422" y="56" font-size="16" font-weight="700" text-anchor="middle">Tank</text>
+            <text x="68" y="150" font-size="14" font-weight="700">M → M⁺</text>
+            <text x="68" y="170" font-size="14" font-weight="700">+ e⁻</text>
+            <text x="68" y="196" font-size="13" fill="#4F5B57">at the</text>
+            <text x="68" y="212" font-size="13" fill="#4F5B57">electrode</text>
+            <text x="350" y="104" font-size="14" font-weight="700">M⁺ + solid</text>
+            <text x="350" y="124" font-size="14" font-weight="700">→ M + solid⁺</text>
+            <text x="350" y="146" font-size="13" fill="#4F5B57">charge is stored</text>
+            <text x="350" y="162" font-size="13" fill="#4F5B57">in the solid</text>
+            <text x="422" y="282" font-size="13" fill="#4F5B57" text-anchor="middle">solid stays in the tank</text>
+            <text x="252" y="104" font-size="13" fill="#8A5A0E" text-anchor="middle">charged mediator</text>
+            <text x="252" y="282" font-size="13" fill="#8A5A0E" text-anchor="middle">mediator returns</text>
+            <text x="16" y="330" font-size="16" font-weight="700">Key condition: the mediator's potential</text>
+            <text x="16" y="352" font-size="16" font-weight="700">must closely match the solid's.</text>
+            <text x="16" y="372" font-size="13" fill="#4F5B57">Charging shown; discharge runs in reverse.</text>
+          </g>
+        </svg>
+      </div>
+      <div class="strategy-text">
+        <h4>Redox targeting (redox mediation)</h4>
+        <p>Here the solid storage material never leaves the tank. A dissolved redox mediator is charged at the electrode, flows to the tank and passes its charge to the solid by a chemical reaction, then returns to be charged again. On discharge the process runs in reverse. Only a clear liquid is pumped, yet the solid in the tank sets the capacity, which can be several times that of the electrolyte alone.</p>
+        <p>Because the solid never touches the electrode, it does not need to conduct electricity and there is no slurry to clog the cell. The catch is that the mediator's potential must closely match the solid's: a mismatch of only a few tens of millivolts leaves much of the solid unused or costs extra voltage.</p>
+        <p class="we"><b>What we study.</b> Pairs of mediators and solid materials that match well, and redox-mediating chemistry that raises the usable capacity of flow batteries.</p>
+      </div>
+    </article>
+
+    <h3 class="approach-title">Making the cell itself work better</h3>
     <ol class="approach">
-      <li><span class="n">1</span><div><h4>Nano-electrofluids</h4><p>We disperse redox-active nanoparticles in the electrolyte so that the particles themselves store charge, going beyond what dissolved ions alone can hold. We design the particle surfaces so the fluid stays stable and pumpable at high loading, and study how charge moves between the particles and the electrode.</p></div></li>
-      <li><span class="n">2</span><div><h4>Redox-mediating chemistry</h4><p>Solid storage materials hold far more charge than a solution, but they cannot reach the electrode. Dissolved redox mediators shuttle charge between the electrode and solids kept in the tank, adding solid-state capacity while the battery remains a flowing liquid system.</p></div></li>
-      <li><span class="n">3</span><div><h4>Electrode design and electrokinetics</h4><p>The reactions take place on the surface of carbon fiber electrodes. We engineer surface defects and heteroatom dopants and measure how each changes the reaction rate. Our studies show that defect sites, more than oxygen groups, control vanadium redox kinetics.</p></div></li>
-      <li><span class="n">4</span><div><h4>Flow cell design and operando analysis</h4><p>We design flow cells and measure, while they run, how much voltage is lost at each electrode and at the membrane. Knowing where the losses occur tells us which component to improve next.</p></div></li>
+      <li><div><h4>Electrode design and electrokinetics</h4><p>The reactions take place on the surface of carbon fiber electrodes. We engineer surface defects and heteroatom dopants and measure how each changes the reaction rate. Our studies show that defect sites, more than oxygen groups, control vanadium redox kinetics.</p></div></li>
+      <li><div><h4>Flow cell design and operando analysis</h4><p>We design flow cells and measure, while they run, how much voltage is lost at each electrode and at the membrane. Knowing where the losses occur tells us which component to improve next.</p></div></li>
     </ol>
 
     <div class="area-foot">
       <div>
         <h3>Where it applies</h3>
-        <div class="tags"><span class="tag">Grid-scale energy storage (ESS)</span><span class="tag">Renewable power plants</span><span class="tag">Long-duration storage</span><span class="tag">Safe storage near people and buildings</span></div>
+        <div class="tags"><span class="tag">Grid-scale energy storage (ESS)</span><span class="tag">Renewable power plants</span><span class="tag">Long-duration storage</span><span class="tag">Storage near people and buildings</span></div>
       </div>
       <div>
         <h3>What students do</h3>
