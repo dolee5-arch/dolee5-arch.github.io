@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/style.css?v=20261017m">
+<link rel="stylesheet" href="assets/style.css?v=20261025a">
 </head>
 <body>
 
@@ -29,47 +29,252 @@
 <section class="page-head">
   <div class="wrap">
     <h1>Research</h1>
-    <p class="lead">Our research has two connected areas: electrochemical energy storage, and catalysis and materials for green energy and chemicals. In both, we tune the surfaces, defects and dopants of a material and follow that chemistry through to the performance of a full cell, reactor or device.</p>
-    <nav class="page-nav" aria-label="On this page"><a href="#storage">Energy storage</a><a href="#catalysis">Catalysis</a></nav>
+    <p class="lead">Two problems sit at the center of the energy transition: storing renewable electricity safely and cheaply, and producing hydrogen and chemicals with less energy and less CO<sub>2</sub>. We work on both, starting from the surface chemistry of materials and carrying it through to working cells, reactors and processes.</p>
+    <nav class="page-nav" aria-label="On this page"><a href="#storage">Energy storage</a><a href="#catalysis">Catalysis and materials</a></nav>
   </div>
 </section>
 
-<section>
+<section class="area" id="storage">
   <div class="wrap">
-    <div class="thrust" id="storage">
-      <div class="thrust-num">01</div>
-      <div class="thrust-body">
-        <h2>Electrochemical energy storage</h2>
-        <p class="lead" style="margin-top:20px">Energy storage beyond today's lithium-ion batteries must be safe from fire and explosion, cost-competitive and long-lasting. Flow batteries are emerging as a storage technology that can meet this challenge, and we are developing new approaches to raise their energy density and efficiency.</p>
-        <ul class="topics">
-          <li><b>Nano-electrofluids.</b> Design and synthesis of nano-electrofluids carrying redox-active solid materials, and electrochemical analysis of their charge storage, to go beyond the energy-density limit of conventional electrolytes.</li>
-          <li><b>Redox-mediating chemistry.</b> Applying the redox-mediation concept to increase the energy storage density of flow batteries.</li>
-          <li><b>Battery electrode design and electrokinetics.</b> Carbon electrodes designed by heteroatom doping and defect engineering, and electrokinetic studies linking electrode surfaces and electrofluids to cell performance.</li>
-          <li><b>Flow cell reactor design and analysis.</b> Design of flow cells and analysis of their performance, including operando diagnostics of cell voltage losses.</li>
-        </ul>
-        <div class="tags"><span class="tag">Flow batteries</span><span class="tag">Nano-electrofluids</span><span class="tag">Redox mediation</span><span class="tag">Electrode design</span><span class="tag">Flow cell reactors</span></div>
+    <header class="area-head">
+      <h2>Electrochemical energy storage</h2>
+      <p class="area-q">Making flow batteries a safe, long-lasting place to store renewable electricity.</p>
+    </header>
+
+    <div class="area-intro">
+      <div>
+        <h3>Why it matters</h3>
+        <p>Solar and wind power rise and fall with the weather, so a grid that runs on them needs storage measured in hours and megawatt-hours. Lithium-ion batteries dominate today, but at this scale their fire risk, cost and limited cycle life become serious problems.</p>
+        <p>In a flow battery, energy is stored in liquid electrolytes kept in external tanks and converted to electricity in a separate cell stack. The water-based electrolytes do not burn, energy and power can be sized independently, and the active materials do not wear out the way lithium-ion electrodes do.</p>
       </div>
-      <figure class="thrust-fig"><a href="assets/img/research-storage-v1.png" target="_blank" rel="noopener"><img src="assets/img/research-storage-v1.png" width="1222" height="805" alt="Redox flow battery: positive and negative electrolyte tanks, electrodes and cell stack, with impedance spectra and cell voltage loss analysis" loading="lazy"></a><figcaption>Click to enlarge</figcaption></figure>
+      <div>
+        <h3>The challenge</h3>
+        <p>A flow battery holds only about a tenth of the energy of a lithium-ion battery of the same volume, because the electrolyte can dissolve only so much active material. Part of the energy is also lost as voltage losses inside the cell. Raising energy density and efficiency is what will make flow batteries competitive for large-scale storage.</p>
+      </div>
     </div>
 
-    <div class="thrust" id="catalysis">
-      <div class="thrust-num">02</div>
-      <div class="thrust-body">
-        <h2>Catalysis and materials for green energy and chemicals</h2>
-        <p class="lead" style="margin-top:20px">We design heterogeneous and electrochemical catalysts together with the reactors and processes they run in, from surface chemistry to heat and mass transport, and extend the materials we develop to applications such as fuel cells and thermal management.</p>
-        <ul class="topics">
-          <li><b>Heterogeneous catalysis for hydrogen production.</b> Catalysts and processes for natural gas fuel processing — desulfurization, steam reforming, water–gas shift and preferential CO oxidation — and glycerol steam reforming.</li>
-          <li><b>Electrochemical CO<sub>2</sub> conversion.</b> Electrocatalysts and electrochemical processes that convert CO<sub>2</sub> into useful chemicals.</li>
-          <li><b>Heat-conductive core–shell catalysts.</b> Metal–ceramic core–shell catalysts such as Al@Al<sub>2</sub>O<sub>3</sub> (U.S. Patent 12,734,505) that remove reaction heat quickly in thermochemical catalytic processes.</li>
-          <li><b>Reaction kinetics and mechanism studies.</b> Kinetic and mechanistic studies of catalytic reactions, combining experiments with DFT calculations and microkinetic analysis, to understand how surface reactions proceed and to guide catalyst design.</li>
-          <li><b>Advanced chemical reactors and process integration.</b> Membrane reactors, such as H<sub>2</sub>-selective silica membrane reactors for CO<sub>2</sub> reforming of methane, and integrated compact processes such as a 1 kW residential PEM fuel cell natural gas fuel processor.</li>
-          <li><b>Functional materials and applications.</b> N-doped CeO<sub>2</sub> radical scavengers for durable PEM fuel cells, heat-conductive fillers and graphene for thermal interface materials, and metal–organic frameworks for gas separation and reactor applications.</li>
-        </ul>
-        <div class="tags"><span class="tag">Hydrogen production</span><span class="tag">Electrochemical CO₂ conversion</span><span class="tag">Membrane reactors</span><span class="tag">Core–shell catalysts</span><span class="tag">Reaction kinetics</span><span class="tag">Functional materials</span></div>
+    <figure class="principle">
+      <div class="panels">
+        <div class="panel">
+          <p class="panel-title">How a flow battery works</p>
+          <svg viewBox="0 0 520 380" role="img" aria-labelledby="fb1t">
+            <title id="fb1t">Flow battery: two electrolyte tanks are pumped through a cell stack connected to the grid. Tanks set the stored energy; the stack sets the power.</title>
+            <g fill="none" stroke="#7C8A84" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+              <path d="M130 250 H200"/><path d="M226 110 V80 H75 V120"/>
+              <path d="M390 250 H320"/><path d="M294 110 V80 H445 V120"/>
+            </g>
+            <g stroke="#3A4642" stroke-width="2.5" fill="none"><path d="M215 300 V334"/><path d="M305 300 V334"/></g>
+            <rect x="20" y="120" width="110" height="170" rx="16" fill="#E2ECF8" stroke="#2F5C9C" stroke-width="2.5"/>
+            <rect x="390" y="120" width="110" height="170" rx="16" fill="#E3F1E4" stroke="#1F7A33" stroke-width="2.5"/>
+            <g fill="#2F5C9C"><circle cx="48" cy="200" r="7"/><circle cx="78" cy="186" r="7"/><circle cx="104" cy="210" r="7"/><circle cx="58" cy="236" r="7"/><circle cx="92" cy="250" r="7"/><circle cx="110" cy="176" r="7"/><circle cx="40" cy="262" r="7"/></g>
+            <g fill="#7C8A84"><rect x="404" y="244" width="22" height="22" rx="3"/><rect x="430" y="248" width="22" height="18" rx="3"/><rect x="456" y="242" width="24" height="24" rx="3"/><rect x="416" y="222" width="20" height="18" rx="3"/><rect x="442" y="224" width="22" height="18" rx="3"/></g>
+            <g fill="#1F7A33"><circle cx="420" cy="180" r="4"/><circle cx="452" cy="196" r="4"/><circle cx="478" cy="172" r="4"/></g>
+            <rect x="200" y="110" width="52" height="190" fill="#DCEBDD" stroke="#1F7A33" stroke-width="2"/>
+            <rect x="268" y="110" width="52" height="190" fill="#DCEBDD" stroke="#1F7A33" stroke-width="2"/>
+            <rect x="252" y="110" width="16" height="190" fill="#B8C2BD"/>
+            <g stroke="#9FC3A4" stroke-width="2"><path d="M212 120 V290"/><path d="M226 120 V290"/><path d="M240 120 V290"/><path d="M280 120 V290"/><path d="M294 120 V290"/><path d="M308 120 V290"/></g>
+            <g fill="#fff" stroke="#3A4642" stroke-width="2.5"><circle cx="165" cy="250" r="13"/><circle cx="355" cy="250" r="13"/></g>
+            <g fill="#3A4642"><path d="M160 243 L172 250 L160 257Z"/><path d="M360 243 L348 250 L360 257Z"/></g>
+            <rect x="160" y="334" width="200" height="36" rx="18" fill="#fff" stroke="#3A4642" stroke-width="2"/>
+            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C" text-anchor="middle">
+              <text x="260" y="358" font-size="16" font-weight="600">Solar, wind and grid</text>
+              <text x="260" y="34" font-size="18" font-weight="700">Cell stack</text>
+              <text x="260" y="56" font-size="15" fill="#4F5B57">sets the power</text>
+              <text x="75" y="320" font-size="18" font-weight="700">Tanks</text>
+              <text x="75" y="342" font-size="15" fill="#4F5B57">set the energy</text>
+              <text x="445" y="320" font-size="18" font-weight="700">Tanks</text>
+              <text x="445" y="342" font-size="15" fill="#4F5B57">set the energy</text>
+              <text x="75" y="150" font-size="26" font-weight="700" fill="#2F5C9C">+</text>
+              <text x="445" y="152" font-size="26" font-weight="700" fill="#1F7A33">−</text>
+            </g>
+            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#fff">
+              <circle cx="40" cy="104" r="13" fill="#1F7A33"/><text x="40" y="109">1</text>
+              <circle cx="480" cy="104" r="13" fill="#1F7A33"/><text x="480" y="109">2</text>
+              <circle cx="226" cy="206" r="13" fill="#1F7A33"/><text x="226" y="211">3</text>
+              <circle cx="340" cy="128" r="13" fill="#1F7A33"/><text x="340" y="133">4</text>
+            </g>
+          </svg>
+        </div>
+        <div class="panel">
+          <p class="panel-title">Where we work, at the electrode surface</p>
+          <svg viewBox="0 0 520 380" role="img" aria-labelledby="fb2t">
+            <title id="fb2t">At the carbon fiber electrode: nanoparticles carry charge, vanadium ions react at defect sites, and redox mediators carry charge to solid storage materials.</title>
+            <defs><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3A4642"/></marker></defs>
+            <path d="M10 290 H226 l10 -12 l10 12 H335 l10 -12 l10 12 H510 V350 H10Z" fill="#4A5550"/>
+            <circle cx="236" cy="284" r="5" fill="#8ED18E"/><circle cx="345" cy="284" r="5" fill="#8ED18E"/>
+            <text x="260" y="330" text-anchor="middle" font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="16" font-weight="600" fill="#fff">Carbon fiber electrode</text>
+            <circle cx="85" cy="210" r="34" fill="#E2ECF8" stroke="#2F5C9C" stroke-width="2.5"/>
+            <circle cx="85" cy="210" r="22" fill="#B9CDEB"/>
+            <path d="M85 248 V282" stroke="#3A4642" stroke-width="2.5" marker-end="url(#ah1)"/>
+            <circle cx="255" cy="200" r="11" fill="#2F5C9C"/><circle cx="215" cy="160" r="11" fill="#2F5C9C"/>
+            <path d="M250 212 Q 228 248 236 276" fill="none" stroke="#3A4642" stroke-width="2.5" stroke-dasharray="5 5" marker-end="url(#ah1)"/>
+            <g fill="#7C8A84"><rect x="410" y="60" width="34" height="34" rx="4"/><rect x="448" y="66" width="30" height="28" rx="4"/><rect x="428" y="98" width="32" height="28" rx="4"/></g>
+            <circle cx="372" cy="230" r="13" fill="#F2B544" stroke="#B9801A" stroke-width="2"/>
+            <circle cx="420" cy="160" r="13" fill="#F2B544" stroke="#B9801A" stroke-width="2"/>
+            <path d="M362 246 Q 348 264 346 276" fill="none" stroke="#3A4642" stroke-width="2.5" marker-end="url(#ah1)"/>
+            <path d="M380 214 L410 176" fill="none" stroke="#3A4642" stroke-width="2.5" marker-end="url(#ah1)"/>
+            <path d="M430 145 L438 130" fill="none" stroke="#3A4642" stroke-width="2.5" marker-end="url(#ah1)"/>
+            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C">
+              <text x="30" y="132" font-size="16" font-weight="700">Nanoparticle</text>
+              <text x="30" y="152" font-size="14" fill="#4F5B57">stores charge</text>
+              <text x="190" y="118" font-size="16" font-weight="700">V ion</text>
+              <text x="190" y="138" font-size="14" fill="#4F5B57">reacts at a defect</text>
+              <text x="300" y="60" font-size="16" font-weight="700">Mediator</text>
+              <text x="300" y="80" font-size="14" fill="#4F5B57">carries charge</text>
+              <text x="300" y="98" font-size="14" fill="#4F5B57">to the solid</text>
+              <text x="444" y="46" font-size="14" fill="#4F5B57" text-anchor="middle">solid in tank</text>
+              <text x="96" y="275" font-size="15" font-weight="600">e⁻</text>
+              <text x="206" y="266" font-size="15" font-weight="600">e⁻</text>
+              <text x="314" y="266" font-size="15" font-weight="600">e⁻</text>
+            </g>
+            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#fff">
+              <circle cx="132" cy="186" r="13" fill="#1F7A33"/><text x="132" y="191">1</text>
+              <circle cx="404" cy="246" r="13" fill="#1F7A33"/><text x="404" y="251">2</text>
+              <circle cx="286" cy="176" r="13" fill="#1F7A33"/><text x="286" y="181">3</text>
+            </g>
+          </svg>
+        </div>
       </div>
-      <figure class="thrust-fig"><a href="assets/img/research-catalysis-v1.png" target="_blank" rel="noopener"><img src="assets/img/research-catalysis-v1.png" width="536" height="553" alt="Core–shell catalysts for H2 production and CO2 utilization: NiAl2O4@Al and Al@Al2O3 core–shell structures, Ni nanoparticles, and CO2 methanation conversion" loading="lazy"></a><figcaption>Click to enlarge</figcaption></figure>
+      <figcaption>Energy is stored in the electrolyte tanks and converted in the cell stack. Numbers mark where each of our approaches acts.</figcaption>
+    </figure>
+
+    <h3 class="approach-title">Our approach</h3>
+    <ol class="approach">
+      <li><span class="n">1</span><div><h4>Nano-electrofluids</h4><p>We disperse redox-active nanoparticles in the electrolyte so that the particles themselves store charge, going beyond what dissolved ions alone can hold. We design the particle surfaces so the fluid stays stable and pumpable at high loading, and study how charge moves between the particles and the electrode.</p></div></li>
+      <li><span class="n">2</span><div><h4>Redox-mediating chemistry</h4><p>Solid storage materials hold far more charge than a solution, but they cannot reach the electrode. Dissolved redox mediators shuttle charge between the electrode and solids kept in the tank, adding solid-state capacity while the battery remains a flowing liquid system.</p></div></li>
+      <li><span class="n">3</span><div><h4>Electrode design and electrokinetics</h4><p>The reactions take place on the surface of carbon fiber electrodes. We engineer surface defects and heteroatom dopants and measure how each changes the reaction rate. Our studies show that defect sites, more than oxygen groups, control vanadium redox kinetics.</p></div></li>
+      <li><span class="n">4</span><div><h4>Flow cell design and operando analysis</h4><p>We design flow cells and measure, while they run, how much voltage is lost at each electrode and at the membrane. Knowing where the losses occur tells us which component to improve next.</p></div></li>
+    </ol>
+
+    <div class="area-foot">
+      <div>
+        <h3>Where it applies</h3>
+        <div class="tags"><span class="tag">Grid-scale energy storage (ESS)</span><span class="tag">Renewable power plants</span><span class="tag">Long-duration storage</span><span class="tag">Safe storage near people and buildings</span></div>
+      </div>
+      <div>
+        <h3>What students do</h3>
+        <p>Synthesize nanomaterials and electrode materials, build and test flow cells, and analyze them with electrochemical methods such as cyclic voltammetry and impedance spectroscopy.</p>
+      </div>
     </div>
 
+    <figure class="result">
+      <a href="assets/img/research-storage-v1.png" target="_blank" rel="noopener"><img src="assets/img/research-storage-v1.png" width="1222" height="805" alt="Flow battery schematic with impedance spectra of doped carbon electrodes and operando analysis of cell voltage losses" loading="lazy"></a>
+      <figcaption><b>From our work.</b> Impedance spectra of doped carbon electrodes and cell voltage losses separated by operando analysis. Click to enlarge.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="area alt" id="catalysis">
+  <div class="wrap">
+    <header class="area-head">
+      <h2>Catalysis and materials for green energy and chemicals</h2>
+      <p class="area-q">Catalysts and reactors for clean hydrogen and CO<sub>2</sub> conversion.</p>
+    </header>
+
+    <div class="area-intro">
+      <div>
+        <h3>Why it matters</h3>
+        <p>Hydrogen, the chemicals made from it, and the conversion of CO<sub>2</sub> into useful products all depend on catalysts. A better catalyst lets a reaction run at a lower temperature, with less energy and fewer by-products, which lowers both cost and emissions.</p>
+      </div>
+      <div>
+        <h3>The challenge</h3>
+        <p>Many of these reactions absorb or release large amounts of heat: steam reforming of methane consumes heat, and CO<sub>2</sub> methanation releases it. Heat moves slowly through conventional ceramic catalysts, so hot and cold spots form, the catalyst deactivates and the reactor runs below its potential. Performance depends not only on the active sites but on how heat and mass reach them.</p>
+      </div>
+    </div>
+
+    <figure class="principle">
+      <div class="panels">
+        <div class="panel">
+          <p class="panel-title">A catalyst that carries its own heat</p>
+          <svg viewBox="0 0 520 380" role="img" aria-labelledby="cs1t">
+            <title id="cs1t">Core–shell catalyst: an aluminium metal core carries heat, a porous Al2O3 shell grown on it anchors metal nanoparticles that serve as active sites.</title>
+            <defs><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#C2621B"/></marker></defs>
+            <circle cx="180" cy="190" r="140" fill="#EFE6D3" stroke="#C9B48A" stroke-width="2"/>
+            <g stroke="#C9B48A" stroke-width="2" stroke-linecap="round">
+              <path d="M180 50 v14"/><path d="M250 69 l-7 12"/><path d="M301 120 l-12 7"/><path d="M320 190 h-14"/><path d="M301 260 l-12 -7"/><path d="M250 311 l-7 -12"/><path d="M180 330 v-14"/><path d="M110 311 l7 -12"/><path d="M59 260 l12 -7"/><path d="M40 190 h14"/><path d="M59 120 l12 7"/><path d="M110 69 l7 12"/>
+              <path d="M215 55 l-3 14"/><path d="M279 92 l-10 10"/><path d="M315 155 l-14 4"/><path d="M315 225 l-14 -4"/><path d="M279 288 l-10 -10"/><path d="M215 325 l-3 -14"/><path d="M145 325 l3 -14"/><path d="M81 288 l10 -10"/><path d="M45 225 l14 -4"/><path d="M45 155 l14 4"/><path d="M81 92 l10 10"/><path d="M145 55 l3 14"/>
+            </g>
+            <circle cx="180" cy="190" r="100" fill="#C9D1D8" stroke="#8E9AA4" stroke-width="2"/>
+            <g fill="#1F7A33"><circle cx="196" cy="54" r="7"/><circle cx="265" cy="80" r="7"/><circle cx="310" cy="138" r="7"/><circle cx="318" cy="208" r="7"/><circle cx="292" cy="272" r="7"/><circle cx="232" cy="318" r="7"/><circle cx="160" cy="326" r="7"/><circle cx="96" cy="300" r="7"/><circle cx="52" cy="244" r="7"/><circle cx="44" cy="170" r="7"/><circle cx="66" cy="108" r="7"/><circle cx="126" cy="62" r="7"/></g>
+            <path d="M110 190 H250" stroke="#C2621B" stroke-width="4" marker-start="url(#ah2)" marker-end="url(#ah2)"/>
+            <text x="180" y="176" text-anchor="middle" font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="16" font-weight="700" fill="#C2621B">heat</text>
+            <g stroke="#3A4642" stroke-width="1.5"><path d="M318 208 L372 230"/><path d="M300 100 L372 110"/><path d="M240 250 L372 330"/></g>
+            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C">
+              <text x="376" y="104" font-size="16" font-weight="700">Al₂O₃ shell</text>
+              <text x="376" y="124" font-size="14" fill="#4F5B57">grown on the</text>
+              <text x="376" y="142" font-size="14" fill="#4F5B57">metal, porous</text>
+              <text x="376" y="226" font-size="16" font-weight="700">Metal particles</text>
+              <text x="376" y="246" font-size="14" fill="#4F5B57">active sites</text>
+              <text x="376" y="326" font-size="16" font-weight="700">Al metal core</text>
+              <text x="376" y="346" font-size="14" fill="#4F5B57">carries heat</text>
+            </g>
+            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#fff"><circle cx="32" cy="40" r="13" fill="#1F7A33"/><text x="32" y="45">1</text></g>
+          </svg>
+        </div>
+        <div class="panel">
+          <p class="panel-title">A reactor that separates as it reacts</p>
+          <svg viewBox="0 0 520 380" role="img" aria-labelledby="mr1t">
+            <title id="mr1t">Membrane reactor: methane and steam react on the catalyst bed; hydrogen passes through a selective membrane and leaves as a pure stream, shifting the equilibrium toward more hydrogen.</title>
+            <defs><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3A4642"/></marker><marker id="ah4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#2F5C9C"/></marker></defs>
+            <rect x="60" y="110" width="370" height="160" rx="24" fill="#F6F8F7" stroke="#3A4642" stroke-width="2.5"/>
+            <g fill="#C9B48A">
+              <circle cx="90" cy="130" r="7"/><circle cx="120" cy="146" r="7"/><circle cx="150" cy="128" r="7"/><circle cx="180" cy="148" r="7"/><circle cx="210" cy="130" r="7"/><circle cx="240" cy="148" r="7"/><circle cx="270" cy="128" r="7"/><circle cx="300" cy="148" r="7"/><circle cx="330" cy="130" r="7"/><circle cx="360" cy="148" r="7"/><circle cx="390" cy="128" r="7"/><circle cx="405" cy="150" r="7"/>
+              <circle cx="90" cy="250" r="7"/><circle cx="120" cy="234" r="7"/><circle cx="150" cy="252" r="7"/><circle cx="180" cy="232" r="7"/><circle cx="210" cy="250" r="7"/><circle cx="240" cy="232" r="7"/><circle cx="270" cy="252" r="7"/><circle cx="300" cy="232" r="7"/><circle cx="330" cy="250" r="7"/><circle cx="360" cy="232" r="7"/><circle cx="390" cy="252" r="7"/><circle cx="405" cy="230" r="7"/>
+            </g>
+            <rect x="80" y="172" width="390" height="36" rx="18" fill="#E2ECF8" stroke="#2F5C9C" stroke-width="2.5" stroke-dasharray="7 5"/>
+            <g stroke="#2F5C9C" stroke-width="2.5" marker-end="url(#ah4)"><path d="M160 156 V170"/><path d="M260 156 V170"/><path d="M360 156 V170"/><path d="M210 224 V210"/><path d="M310 224 V210"/></g>
+            <path d="M8 140 H58" stroke="#3A4642" stroke-width="3" marker-end="url(#ah3)"/>
+            <path d="M432 245 H500" stroke="#3A4642" stroke-width="3" marker-end="url(#ah3)"/>
+            <path d="M470 190 H512" stroke="#2F5C9C" stroke-width="3" marker-end="url(#ah4)"/>
+            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C">
+              <text x="10" y="92" font-size="16" font-weight="700">CH₄ + H₂O</text>
+              <text x="10" y="112" font-size="14" fill="#4F5B57">feed</text>
+              <text x="512" y="164" font-size="16" font-weight="700" text-anchor="end" fill="#2F5C9C">Pure H₂</text>
+              <text x="512" y="276" font-size="15" fill="#4F5B57" text-anchor="end">CO, CO₂</text>
+              <text x="245" y="196" font-size="15" font-weight="600" fill="#2F5C9C" text-anchor="middle">H₂-selective membrane</text>
+              <text x="60" y="338" font-size="16" font-weight="700">Removing H₂ shifts the equilibrium,</text>
+              <text x="60" y="360" font-size="16" font-weight="700">so more fuel converts at lower temperature.</text>
+            </g>
+            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#fff"><circle cx="40" cy="300" r="13" fill="#1F7A33"/><text x="40" y="305">4</text></g>
+          </svg>
+        </div>
+      </div>
+      <figcaption>Left: the metal core moves heat in and out while the shell provides the reaction surface. Right: a hydrogen-selective membrane combines reaction and separation in one unit.</figcaption>
+    </figure>
+
+    <h3 class="approach-title">Our approach</h3>
+    <ol class="approach">
+      <li><span class="n">1</span><div><h4>Catalysts with built-in heat transport</h4><p>We grow a thin, porous Al<sub>2</sub>O<sub>3</sub> shell directly on aluminium metal and anchor metal nanoparticles on it. The metal core moves heat quickly while the shell provides the reaction surface, so surface chemistry and heat transport are designed together (U.S. Patent 12,734,505).</p></div></li>
+      <li><span class="n">2</span><div><h4>Hydrogen production and CO<sub>2</sub> conversion</h4><p>We apply these catalysts to hydrogen production from natural gas and bio-derived glycerol, and to the conversion of CO<sub>2</sub>, including electrochemical routes that turn CO<sub>2</sub> into useful chemicals.</p></div></li>
+      <li><span class="n">3</span><div><h4>Reaction kinetics and mechanisms</h4><p>We measure reaction rates and combine them with DFT calculations and microkinetic models to find which surface steps control a reaction. That understanding tells us how to design the next catalyst, rather than finding it by trial and error.</p></div></li>
+      <li><span class="n">4</span><div><h4>Membrane reactors and process integration</h4><p>A hydrogen-selective membrane removes H<sub>2</sub> as it forms, pushing the reaction toward higher conversion. We combine reaction and separation in compact units, such as a 1 kW natural gas fuel processor for residential fuel cells.</p></div></li>
+    </ol>
+
+    <div class="beyond">
+      <h3>The same materials, beyond catalysis</h3>
+      <p>The design principles carry over to other problems: N-doped CeO<sub>2</sub> that removes the radicals that degrade fuel cell membranes, heat-conductive core–shell fillers and graphene for thermal interface materials in batteries and electronics, and metal–organic frameworks for gas separation.</p>
+    </div>
+
+    <div class="area-foot">
+      <div>
+        <h3>Where it applies</h3>
+        <div class="tags"><span class="tag">Hydrogen production</span><span class="tag">Fuel cells</span><span class="tag">CO₂ utilization</span><span class="tag">Chemical processes</span><span class="tag">Thermal management</span></div>
+      </div>
+      <div>
+        <h3>What students do</h3>
+        <p>Synthesize and characterize catalysts and nanomaterials, run reactor tests with gas chromatography, and analyze reaction kinetics.</p>
+      </div>
+    </div>
+
+    <figure class="result">
+      <a href="assets/img/research-catalysis-v1.png" target="_blank" rel="noopener"><img src="assets/img/research-catalysis-v1.png" width="536" height="553" alt="NiAl2O4@Al and Al@Al2O3 core–shell catalysts with Ni nanoparticles, and CO2 methanation conversion" loading="lazy"></a>
+      <figcaption><b>From our work.</b> Core–shell catalysts grown on aluminium (electron microscopy) with Ni nanoparticles, and their CO<sub>2</sub> conversion. Click to enlarge.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="toolkit-wrap">
+  <div class="wrap">
     <div class="toolkit">
       <p>Characterization toolkit</p>
       <div class="chips">
