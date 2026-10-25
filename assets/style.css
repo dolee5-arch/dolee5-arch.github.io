@@ -495,3 +495,18 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .merits-4{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:20px}
 @media (max-width:1000px){.merits-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.merits-4{grid-template-columns:1fr}}
+
+/* ---- Research: simpler catalysis + functional materials (2026-10-25) ---- */
+.area-links{grid-template-columns:repeat(3,minmax(0,1fr))}
+.figpair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:18px;max-width:980px}
+.figpair figure{margin:0}
+.figpair figcaption{margin-top:8px;font-size:15px;color:var(--ink-2);line-height:1.5}
+.topic-lead{margin:8px 0 0 !important;max-width:780px}
+.mat-lead{max-width:780px;margin:20px 0 0}
+.matgrid{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.matgrid li{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.mat-ic{flex:0 0 44px}
+.matgrid h4{margin:0 0 6px;font-size:18px;line-height:1.3}
+.matgrid p{margin:0;font-size:15.5px;line-height:1.6}
+@media (max-width:1000px){.area-links{grid-template-columns:1fr}}
+@media (max-width:760px){.figpair,.matgrid{grid-template-columns:1fr}}
