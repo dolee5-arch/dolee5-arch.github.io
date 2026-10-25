@@ -519,3 +519,4 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .catfig-text p{margin:0 0 12px}
 .catfig-cap{font-size:14px;color:var(--muted) !important}
 @media (max-width:900px){.catfig{grid-template-columns:1fr}.catfig figure{max-width:440px}}
+.hc-tags{margin-top:14px;padding-top:0}
