@@ -455,3 +455,24 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .area{scroll-margin-top:110px}
 @media (max-width:760px){.area-links{grid-template-columns:1fr}.area-links a{padding:20px 56px 20px 20px}}
 @media (max-width:640px){.area{scroll-margin-top:12px}}
+
+/* ---- Research: tighter spacing (2026-10-25) ---- */
+.page-head:has(.area-links){padding-top:28px}
+.page-head:has(.area-links) + .area{padding-top:36px}
+.area{padding:52px 0}
+.area-head + .glance{margin-top:20px}
+.duo{margin-top:36px;gap:24px 48px}
+.duo + .duo{margin-top:28px}
+.topic{margin-top:48px}
+.strategy{margin-top:14px;padding-top:18px;gap:16px 40px}
+.pair{margin-top:44px;gap:28px 40px}
+.pair article p{margin-bottom:12px}
+.area-intro{margin-top:24px}
+.principle{margin-top:28px}
+.principle .panels{max-width:980px}
+.approach-title{margin-top:36px !important}
+.approach{gap:20px 40px;margin-top:14px}
+.beyond{margin-top:28px}
+.result{margin-top:28px;max-width:420px}
+.toolkit-wrap{padding:36px 0 48px}
+@media (max-width:640px){.area{padding:40px 0}.duo{margin-top:28px}.topic,.pair{margin-top:36px}}
