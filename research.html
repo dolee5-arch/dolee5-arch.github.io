@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research | Green Energy &amp; Catalysis Lab</title>
-<meta name="description" content="Research at the Green Energy &amp; Catalysis Lab, University of Seoul: safe, scalable flow batteries for growing electricity demand, and heterogeneous catalysis for hydrogen production, CO₂ conversion and advanced reactors.">
+<meta name="description" content="Research at the Green Energy &amp; Catalysis Lab, University of Seoul: safe, scalable flow batteries for growing electricity demand, and heterogeneous catalysts for hydrogen production, from desulfurization and reforming to preferential CO oxidation.">
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/style.css?v=20261025e">
+<link rel="stylesheet" href="assets/style.css?v=20261025f">
 </head>
 <body>
 
@@ -31,7 +31,7 @@
     <h1 class="visually-hidden">Research</h1>
     <nav class="area-links" aria-label="Research areas">
       <a href="#storage"><span class="al-t">Electrochemical energy storage</span><span class="al-s">Safe, scalable flow batteries for a growing power demand</span><span class="al-go" aria-hidden="true">↓</span></a>
-      <a href="#catalysis"><span class="al-t">Heterogeneous catalysis</span><span class="al-s">Catalysts and reactors for clean hydrogen and CO<sub>2</sub> conversion</span><span class="al-go" aria-hidden="true">↓</span></a>
+      <a href="#catalysis"><span class="al-t">Heterogeneous catalysis</span><span class="al-s">High-performance catalysts for clean hydrogen</span><span class="al-go" aria-hidden="true">↓</span></a>
     </nav>
   </div>
 </section>
@@ -256,25 +256,58 @@
   <div class="wrap">
     <header class="area-head">
       <h2>Heterogeneous catalysis</h2>
-      <p class="area-q">Catalysts and reactors for clean hydrogen and CO<sub>2</sub> conversion.</p>
+      <p class="area-q">High-performance catalysts for clean hydrogen, designed through synthesis and kinetics.</p>
     </header>
 
-    <div class="area-intro">
-      <div>
-        <h3>Why it matters</h3>
-        <p>Hydrogen, the chemicals made from it, and the conversion of CO<sub>2</sub> into useful products all depend on catalysts. A better catalyst lets a reaction run at a lower temperature, with less energy and fewer by-products, which lowers both cost and emissions.</p>
-      </div>
-      <div>
-        <h3>The challenge</h3>
-        <p>Many of these reactions absorb or release large amounts of heat: steam reforming of methane consumes heat, and CO<sub>2</sub> methanation releases it. Heat moves slowly through conventional ceramic catalysts, so hot and cold spots form, the catalyst deactivates and the reactor runs below its potential. Performance depends not only on the active sites but on how heat and mass reach them.</p>
+    <div class="duo duo-wide">
+      <div class="duo-text">
+        <h3>From fuel to fuel-cell-grade hydrogen</h3>
+        <p>Turning a fuel into hydrogen pure enough for a fuel cell takes a chain of catalytic steps: sulfur must be removed first, the fuel is reformed into hydrogen and carbon monoxide, and the carbon monoxide is then reduced to a few parts per million. Each step needs its own catalyst, and the whole chain is only as good as its weakest one. We work across this chain and have combined the steps into a compact 1 kW natural gas fuel processor for residential fuel cells.</p>
       </div>
     </div>
+    <figure class="panel chain-panel">
+      <div class="chain-scroll"><svg class="chain" viewBox="0 0 1000 260" role="img" aria-labelledby="ch1t">
+          <title id="ch1t">Fuel processing chain: fuels are desulfurized, reformed to hydrogen and carbon monoxide, shifted with steam, and cleaned of the last carbon monoxide to give pure hydrogen for fuel cells.</title>
+          <defs><marker id="ah9" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3A4642"/></marker></defs>
+          <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif">
+          <text x="20" y="40" font-size="15" font-weight="700" fill="#4F5B57">Fuels</text>
+          <text x="20" y="60" font-size="14" fill="#4F5B57">natural gas, LPG,</text>
+          <text x="20" y="78" font-size="14" fill="#4F5B57">glycerol, methanol,</text>
+          <text x="20" y="96" font-size="14" fill="#4F5B57">CO₂ + CH₄</text>
+          <path d="M150 132 H178" stroke="#3A4642" stroke-width="3" marker-end="url(#ah9)"/>
+          <rect x="182" y="90" width="138" height="84" rx="12" fill="#EEF4FB" stroke="#2F5C9C" stroke-width="2"/><text x="251.0" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#15201C">Desulfurization</text><text x="251.0" y="204" text-anchor="middle" font-size="14" fill="#4F5B57">removes sulfur that</text><text x="251.0" y="223" text-anchor="middle" font-size="14" fill="#4F5B57">poisons catalysts</text><circle cx="198" cy="90" r="13" fill="#1F7A33"/><text x="198" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">1</text>
+          <path d="M322 132 H350" stroke="#3A4642" stroke-width="3" marker-end="url(#ah9)"/>
+          <rect x="354" y="90" width="180" height="84" rx="12" fill="#E3F1E4" stroke="#1F7A33" stroke-width="2"/><text x="444.0" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#15201C">Reforming</text><text x="444.0" y="204" text-anchor="middle" font-size="14" fill="#4F5B57">fuel + steam or CO₂</text><text x="444.0" y="223" text-anchor="middle" font-size="14" fill="#4F5B57">→ H₂ + CO</text><circle cx="370" cy="90" r="13" fill="#1F7A33"/><text x="370" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">2</text><circle cx="400" cy="90" r="13" fill="#1F7A33"/><text x="400" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">3</text><circle cx="430" cy="90" r="13" fill="#1F7A33"/><text x="430" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">4</text>
+          <path d="M536 132 H564" stroke="#3A4642" stroke-width="3" marker-end="url(#ah9)"/>
+          <rect x="568" y="90" width="134" height="84" rx="12" fill="#F6F8F7" stroke="#7C8A84" stroke-width="2"/><text x="635.0" y="120" text-anchor="middle" font-size="17" font-weight="700" fill="#15201C">Water–gas</text><text x="635.0" y="142" text-anchor="middle" font-size="17" font-weight="700" fill="#15201C">shift</text><text x="635.0" y="204" text-anchor="middle" font-size="14" fill="#4F5B57">CO + H₂O</text><text x="635.0" y="223" text-anchor="middle" font-size="14" fill="#4F5B57">→ H₂ + CO₂</text>
+          <path d="M704 132 H732" stroke="#3A4642" stroke-width="3" marker-end="url(#ah9)"/>
+          <rect x="736" y="90" width="130" height="84" rx="12" fill="#EEF4FB" stroke="#2F5C9C" stroke-width="2"/><text x="801.0" y="120" text-anchor="middle" font-size="17" font-weight="700" fill="#15201C">Preferential</text><text x="801.0" y="142" text-anchor="middle" font-size="17" font-weight="700" fill="#15201C">CO oxidation</text><text x="801.0" y="204" text-anchor="middle" font-size="14" fill="#4F5B57">removes the last</text><text x="801.0" y="223" text-anchor="middle" font-size="14" fill="#4F5B57">traces of CO</text><circle cx="752" cy="90" r="13" fill="#1F7A33"/><text x="752" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">5</text>
+          <path d="M868 132 H896" stroke="#3A4642" stroke-width="3" marker-end="url(#ah9)"/>
+          <text x="900" y="126" font-size="20" font-weight="700" fill="#18652A">Pure H₂</text>
+          <text x="900" y="148" font-size="14" fill="#4F5B57">for fuel cells</text>
+          </g>
+        </svg></div>
+      <svg class="chain-v" viewBox="0 0 360 510" role="img" aria-labelledby="ch2t">
+          <title id="ch2t">Fuel processing chain from fuels to pure hydrogen for fuel cells.</title>
+          <defs><marker id="ah10" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3A4642"/></marker></defs>
+          <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif"><text x="20" y="28" font-size="15" font-weight="700" fill="#4F5B57">Fuels</text><text x="20" y="48" font-size="14" fill="#4F5B57">natural gas, LPG, glycerol, methanol, CO₂ + CH₄</text><path d="M180 56 V70" stroke="#3A4642" stroke-width="3" marker-end="url(#ah10)"/><rect x="20" y="74" width="320" height="70" rx="12" fill="#EEF4FB" stroke="#2F5C9C" stroke-width="2"/><text x="180" y="105" text-anchor="middle" font-size="18" font-weight="700" fill="#15201C">Desulfurization</text><text x="180" y="128" text-anchor="middle" font-size="14" fill="#4F5B57">removes sulfur that poisons catalysts</text><circle cx="36" cy="74" r="12" fill="#1F7A33"/><text x="36" y="79" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">1</text><path d="M180 156 V170" stroke="#3A4642" stroke-width="3" marker-end="url(#ah10)"/><rect x="20" y="174" width="320" height="70" rx="12" fill="#E3F1E4" stroke="#1F7A33" stroke-width="2"/><text x="180" y="205" text-anchor="middle" font-size="18" font-weight="700" fill="#15201C">Reforming</text><text x="180" y="228" text-anchor="middle" font-size="14" fill="#4F5B57">fuel + steam or CO₂ → H₂ + CO</text><circle cx="36" cy="174" r="12" fill="#1F7A33"/><text x="36" y="179" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">2</text><circle cx="64" cy="174" r="12" fill="#1F7A33"/><text x="64" y="179" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">3</text><circle cx="92" cy="174" r="12" fill="#1F7A33"/><text x="92" y="179" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">4</text><path d="M180 256 V270" stroke="#3A4642" stroke-width="3" marker-end="url(#ah10)"/><rect x="20" y="274" width="320" height="70" rx="12" fill="#F6F8F7" stroke="#7C8A84" stroke-width="2"/><text x="180" y="305" text-anchor="middle" font-size="18" font-weight="700" fill="#15201C">Water–gas shift</text><text x="180" y="328" text-anchor="middle" font-size="14" fill="#4F5B57">CO + H₂O → H₂ + CO₂</text><path d="M180 356 V370" stroke="#3A4642" stroke-width="3" marker-end="url(#ah10)"/><rect x="20" y="374" width="320" height="70" rx="12" fill="#EEF4FB" stroke="#2F5C9C" stroke-width="2"/><text x="180" y="405" text-anchor="middle" font-size="18" font-weight="700" fill="#15201C">Preferential CO oxidation</text><text x="180" y="428" text-anchor="middle" font-size="14" fill="#4F5B57">removes the last traces of CO</text><circle cx="36" cy="374" r="12" fill="#1F7A33"/><text x="36" y="379" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">5</text><path d="M180 456 V470" stroke="#3A4642" stroke-width="3" marker-end="url(#ah10)"/><text x="180" y="494" text-anchor="middle" font-size="20" font-weight="700" fill="#18652A">Pure H₂ for fuel cells</text></g>
+        </svg>
+    </figure>
 
-    <figure class="principle">
-      <div class="panels">
-        <div class="panel">
-          <p class="panel-title">A catalyst that carries its own heat</p>
-          <svg viewBox="0 0 520 380" role="img" aria-labelledby="cs1t">
+    <ol class="topics5" aria-label="Research topics">
+      <li><span class="n">1</span><div><h4>Adsorptive desulfurization</h4><p>Zeolite, metal oxide and carbon adsorbents that remove sulfur odorants from natural gas and LPG at ambient temperature.</p></div></li>
+      <li><span class="n">2</span><div><h4>Reforming of hydrocarbons</h4><p>Steam reforming of natural gas and LPG on Ru and Ni catalysts, including core–shell catalysts for this strongly endothermic reaction.</p></div></li>
+      <li><span class="n">3</span><div><h4>Oxygenated hydrocarbons</h4><p>Hydrogen from bio-derived glycerol and from methanol, a lower-temperature and renewable route to hydrogen.</p></div></li>
+      <li><span class="n">4</span><div><h4>Hydrogen production using CO<sub>2</sub></h4><p>CO<sub>2</sub> reforming of methane to hydrogen and CO, with H<sub>2</sub>-selective membrane reactors that push conversion further.</p></div></li>
+      <li><span class="n">5</span><div><h4>Preferential CO oxidation</h4><p>Pt, Ru and Au catalysts that oxidize the last traces of CO in a hydrogen-rich stream, protecting fuel cell electrodes.</p></div></li>
+    </ol>
+
+    <div class="topic">
+      <p class="topic-k">Our approach</p>
+      <h3>High-performance catalysts from synthesis and kinetics</h3>
+    </div>
+    <article class="strategy">
+      <figure class="panel"><svg viewBox="0 0 520 380" role="img" aria-labelledby="cs1t">
             <title id="cs1t">Core–shell catalyst: an aluminium metal core carries heat, a porous Al2O3 shell grown on it anchors metal nanoparticles that serve as active sites.</title>
             <defs><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#C2621B"/></marker></defs>
             <circle cx="180" cy="190" r="140" fill="#EFE6D3" stroke="#C9B48A" stroke-width="2"/>
@@ -296,58 +329,34 @@
               <text x="376" y="326" font-size="16" font-weight="700">Al metal core</text>
               <text x="376" y="346" font-size="14" fill="#4F5B57">carries heat</text>
             </g>
-            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#fff"><circle cx="32" cy="40" r="13" fill="#1F7A33"/><text x="32" y="45">1</text></g>
-          </svg>
-        </div>
-        <div class="panel">
-          <p class="panel-title">A reactor that separates as it reacts</p>
-          <svg viewBox="0 0 520 380" role="img" aria-labelledby="mr1t">
-            <title id="mr1t">Membrane reactor: methane and steam react on the catalyst bed; hydrogen passes through a selective membrane and leaves as a pure stream, shifting the equilibrium toward more hydrogen.</title>
-            <defs><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3A4642"/></marker><marker id="ah4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#2F5C9C"/></marker></defs>
-            <rect x="60" y="110" width="370" height="160" rx="24" fill="#F6F8F7" stroke="#3A4642" stroke-width="2.5"/>
-            <g fill="#C9B48A">
-              <circle cx="90" cy="130" r="7"/><circle cx="120" cy="146" r="7"/><circle cx="150" cy="128" r="7"/><circle cx="180" cy="148" r="7"/><circle cx="210" cy="130" r="7"/><circle cx="240" cy="148" r="7"/><circle cx="270" cy="128" r="7"/><circle cx="300" cy="148" r="7"/><circle cx="330" cy="130" r="7"/><circle cx="360" cy="148" r="7"/><circle cx="390" cy="128" r="7"/><circle cx="405" cy="150" r="7"/>
-              <circle cx="90" cy="250" r="7"/><circle cx="120" cy="234" r="7"/><circle cx="150" cy="252" r="7"/><circle cx="180" cy="232" r="7"/><circle cx="210" cy="250" r="7"/><circle cx="240" cy="232" r="7"/><circle cx="270" cy="252" r="7"/><circle cx="300" cy="232" r="7"/><circle cx="330" cy="250" r="7"/><circle cx="360" cy="232" r="7"/><circle cx="390" cy="252" r="7"/><circle cx="405" cy="230" r="7"/>
-            </g>
-            <rect x="80" y="172" width="390" height="36" rx="18" fill="#E2ECF8" stroke="#2F5C9C" stroke-width="2.5" stroke-dasharray="7 5"/>
-            <g stroke="#2F5C9C" stroke-width="2.5" marker-end="url(#ah4)"><path d="M160 156 V170"/><path d="M260 156 V170"/><path d="M360 156 V170"/><path d="M210 224 V210"/><path d="M310 224 V210"/></g>
-            <path d="M8 140 H58" stroke="#3A4642" stroke-width="3" marker-end="url(#ah3)"/>
-            <path d="M432 245 H500" stroke="#3A4642" stroke-width="3" marker-end="url(#ah3)"/>
-            <path d="M470 190 H512" stroke="#2F5C9C" stroke-width="3" marker-end="url(#ah4)"/>
-            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" fill="#15201C">
-              <text x="10" y="92" font-size="16" font-weight="700">CH₄ + H₂O</text>
-              <text x="10" y="112" font-size="14" fill="#4F5B57">feed</text>
-              <text x="512" y="164" font-size="16" font-weight="700" text-anchor="end" fill="#2F5C9C">Pure H₂</text>
-              <text x="512" y="276" font-size="15" fill="#4F5B57" text-anchor="end">CO, CO₂</text>
-              <text x="245" y="196" font-size="15" font-weight="600" fill="#2F5C9C" text-anchor="middle">H₂-selective membrane</text>
-              <text x="60" y="338" font-size="16" font-weight="700">Removing H₂ shifts the equilibrium,</text>
-              <text x="60" y="360" font-size="16" font-weight="700">so more fuel converts at lower temperature.</text>
-            </g>
-            <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#fff"><circle cx="40" cy="300" r="13" fill="#1F7A33"/><text x="40" y="305">4</text></g>
-          </svg>
-        </div>
+          </svg></figure>
+      <div class="strategy-text">
+        <h4>Catalyst synthesis by design</h4>
+        <p>We control how a catalyst is made so that its active sites, support and heat transport are set together: metal–ceramic core–shell catalysts grown on aluminium that carry reaction heat (U.S. Patent 12,734,505), metal nanoclusters embedded in mesoporous oxides, and metal particles exsolved from the support so they resist sintering.</p>
+        <p class="we"><b>What we study</b> Synthesis routes that tune particle size, support structure and heat and mass transport for each reaction.</p>
       </div>
-      <figcaption>Left: the metal core moves heat in and out while the shell provides the reaction surface. Right: a hydrogen-selective membrane combines reaction and separation in one unit.</figcaption>
-    </figure>
-
-    <h3 class="approach-title">Our approach</h3>
-    <ol class="approach">
-      <li><span class="n">1</span><div><h4>Catalysts with built-in heat transport</h4><p>We grow a thin, porous Al<sub>2</sub>O<sub>3</sub> shell directly on aluminium metal and anchor metal nanoparticles on it. The metal core moves heat quickly while the shell provides the reaction surface, so surface chemistry and heat transport are designed together (U.S. Patent 12,734,505).</p></div></li>
-      <li><span class="n">2</span><div><h4>Hydrogen production and CO<sub>2</sub> conversion</h4><p>We apply these catalysts to hydrogen production from natural gas and bio-derived glycerol, and to the conversion of CO<sub>2</sub>, including electrochemical routes that turn CO<sub>2</sub> into useful chemicals.</p></div></li>
-      <li><span class="n">3</span><div><h4>Reaction kinetics and mechanisms</h4><p>We measure reaction rates and combine them with DFT calculations and microkinetic models to find which surface steps control a reaction. That understanding tells us how to design the next catalyst, rather than finding it by trial and error.</p></div></li>
-      <li><span class="n">4</span><div><h4>Membrane reactors and process integration</h4><p>A hydrogen-selective membrane removes H<sub>2</sub> as it forms, pushing the reaction toward higher conversion. We combine reaction and separation in compact units, such as a 1 kW natural gas fuel processor for residential fuel cells.</p></div></li>
-    </ol>
-
-    <div class="beyond">
-      <h3>The same materials, beyond catalysis</h3>
-      <p>The design principles carry over to other problems: N-doped CeO<sub>2</sub> that removes the radicals that degrade fuel cell membranes, heat-conductive core–shell fillers and graphene for thermal interface materials in batteries and electronics, and metal–organic frameworks for gas separation.</p>
-    </div>
-
-
-    <figure class="result">
-      <a href="assets/img/research-catalysis-v1.png" target="_blank" rel="noopener"><img src="assets/img/research-catalysis-v1.png" width="536" height="553" alt="NiAl2O4@Al and Al@Al2O3 core–shell catalysts with Ni nanoparticles, and CO2 methanation conversion" loading="lazy"></a>
-      <figcaption><b>From our work.</b> Core–shell catalysts grown on aluminium (electron microscopy) with Ni nanoparticles, and their CO<sub>2</sub> conversion. Click to enlarge.</figcaption>
-    </figure>
+    </article>
+    <article class="strategy">
+      <figure class="panel"><svg viewBox="0 0 520 340" role="img" aria-labelledby="en1t">
+          <title id="en1t">Energy profile of a catalytic reaction with several surface steps; the step with the highest barrier controls the overall rate. Measured rates, DFT calculations and microkinetic models identify it.</title>
+          <path d="M40 40 V290 H500" fill="none" stroke="#7C8A84" stroke-width="2"/>
+          <path d="M50 200 C 80 200, 90 150, 115 150 S 150 230, 175 230 C 205 230, 215 70, 245 70 S 285 250, 315 250 C 340 250, 355 175, 380 175 S 420 270, 470 270" fill="none" stroke="#2F5C9C" stroke-width="3.5"/>
+          <path d="M245 64 V36" stroke="#C2621B" stroke-width="2.5"/>
+          <circle cx="245" cy="70" r="7" fill="#C2621B"/>
+          <g font-family="Pretendard Variable, Pretendard, system-ui, sans-serif">
+            <text x="252" y="34" font-size="16" font-weight="700" fill="#C2621B">Rate-determining step</text>
+            <text x="270" y="318" font-size="14" fill="#4F5B57" text-anchor="middle">reaction progress on the catalyst surface</text>
+            <text x="30" y="165" font-size="14" fill="#4F5B57" text-anchor="middle" transform="rotate(-90 30 165)">energy</text>
+            <text x="50" y="222" font-size="13" fill="#4F5B57">reactants</text>
+            <text x="478" y="258" font-size="13" fill="#4F5B57" text-anchor="end">products</text>
+          </g>
+        </svg></figure>
+      <div class="strategy-text">
+        <h4>Kinetics and mechanism studies</h4>
+        <p>We measure reaction rates over a range of conditions and combine them with DFT calculations and microkinetic models to find which surface step controls the reaction and what binds to the active sites. That tells us which property of the catalyst to change, instead of searching by trial and error.</p>
+        <p class="we"><b>What we study</b> Rate-determining steps, adsorption and surface intermediates, and kinetic models that guide the next catalyst.</p>
+      </div>
+    </article>
   </div>
 </section>
 
