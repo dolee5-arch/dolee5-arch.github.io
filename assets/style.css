@@ -526,3 +526,10 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .vl-fig{padding:12px;max-width:440px}
 .vl-fig img{display:block;width:100%;max-width:422px;height:auto;margin:0 auto}
 .vl-fig figcaption{margin-top:8px;font-size:14px;color:var(--muted);line-height:1.5}
+.row-electrodes{margin-top:44px;border-top:1px solid var(--line-2)}
+.row-electrodes .strategy-text p{max-width:560px}
+.cells-row{margin-top:44px;padding-top:24px;border-top:1px solid var(--line-2)}
+.cells-row > p{max-width:780px;margin:8px 0 0}
+.vl-wide{margin:18px 0 0;padding:14px;max-width:900px}
+.vl-wide img{display:block;width:100%;height:auto}
+.vl-wide figcaption{margin-top:8px;font-size:14px;color:var(--muted)}

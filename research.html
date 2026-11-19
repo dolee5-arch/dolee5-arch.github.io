@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/style.css?v=20261119b">
+<link rel="stylesheet" href="assets/style.css?v=20261119c">
 </head>
 <body>
 
@@ -203,12 +203,8 @@
       </div>
     </article>
 
-    <div class="pair">
-      <article id="es-electrodes">
-        <p class="topic-k">Electrode materials</p>
-        <h3>Faster reactions at the electrode surface</h3>
-        <p>Building on our work on vanadium flow batteries, we engineer defects and heteroatom dopants on carbon electrodes and measure how each changes the reaction rate.</p>
-        <figure class="panel"><svg viewBox="0 0 520 300" role="img" aria-labelledby="el1t">
+    <article class="strategy row-electrodes" id="es-electrodes">
+      <figure class="panel"><svg viewBox="0 0 520 300" role="img" aria-labelledby="el1t">
             <title id="el1t">Carbon fiber electrode surface with defect sites and dopant atoms where vanadium ions react faster.</title>
             <defs><marker id="ah7" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3A4642"/></marker></defs>
             <path d="M10 200 H120 l12 -14 l12 14 H300 l12 -14 l12 14 H510 V280 H10Z" fill="#4A5550"/>
@@ -225,14 +221,18 @@
               <circle cx="372" cy="62" r="7" fill="#9DB8E3" stroke="#2F5C9C" stroke-width="2"/><text x="384" y="67">dopant atom</text></g>
             </g>
           </svg></figure>
-      </article>
-      <article id="es-cells">
-        <p class="topic-k">Flow cell systems</p>
-        <h3>Finding where the voltage is lost</h3>
-        <p>We design flow cells and separate, while they run, the voltage lost at each electrode and at the membrane, a method we developed in vanadium flow batteries, so we know which component to improve next.</p>
-        <figure class="panel vl-fig"><a href="assets/img/research-operando-voltage-loss-v1.png" target="_blank" rel="noopener"><img src="assets/img/research-operando-voltage-loss-v1.png" width="422" height="508" alt="Operando through-plane voltage loss profile of a vanadium flow battery during charging and discharging, split into membrane, anode and cathode voltage losses above the electrolyte potential" loading="lazy"></a><figcaption>Operando voltage loss profile of a vanadium flow battery during (a) charging and (b) discharging at 50 mA cm<sup>−2</sup>, split into membrane, anode and cathode losses.</figcaption></figure>
-      </article>
-    </div>
+      <div class="strategy-text">
+        <p class="topic-k">Electrode materials</p>
+        <h3>Faster reactions at the electrode surface</h3>
+        <p>Building on our work on vanadium flow batteries, we engineer defects and heteroatom dopants on carbon electrodes and measure how each changes the reaction rate.</p>
+      </div>
+    </article>
+    <article class="cells-row" id="es-cells">
+      <p class="topic-k">Flow cell systems</p>
+      <h3>Finding where the voltage is lost</h3>
+      <p>We design flow cells and separate, while they run, the voltage lost at each electrode and at the membrane, a method we developed in vanadium flow batteries, so we know which component to improve next.</p>
+      <figure class="panel vl-wide"><a href="assets/img/research-operando-voltage-loss-v2.png" target="_blank" rel="noopener"><picture><source media="(max-width:640px)" srcset="assets/img/research-operando-voltage-loss-v2-stacked.png"><img src="assets/img/research-operando-voltage-loss-v2.png" width="868" height="270" alt="Operando voltage loss profiles of a vanadium flow battery during charging and discharging, split into membrane, anode and cathode voltage losses above the electrolyte potential" loading="lazy"></picture></a><figcaption>Operando voltage loss profiles of a vanadium flow battery at 50 mA cm<sup>−2</sup>, split into membrane, anode and cathode losses.</figcaption></figure>
+    </article>
 
   </div>
 </section>
