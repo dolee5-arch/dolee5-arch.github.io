@@ -544,3 +544,5 @@ body{word-break:keep-all;overflow-wrap:break-word}
 #storage .pair figure.panel svg{width:100%;height:auto}
 #storage .pair .vl-fig{padding:12px}
 @media (max-width:1000px){#storage .pair > article{grid-row:auto;grid-template-rows:none;display:block}#storage .pair > article + article{margin-top:32px}}
+#catalysis .glance{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:1000px){#catalysis .glance{grid-template-columns:1fr}}
