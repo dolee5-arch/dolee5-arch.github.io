@@ -533,3 +533,6 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .vl-wide{margin:18px 0 0;padding:14px;max-width:900px}
 .vl-wide img{display:block;width:100%;height:auto}
 .vl-wide figcaption{margin-top:8px;font-size:14px;color:var(--muted)}
+.row-cells{grid-template-columns:minmax(0,1fr) minmax(0,440px);margin-top:28px;border-top:1px solid var(--line-2)}
+.row-cells .strategy-text p{max-width:560px}
+@media (max-width:1000px){.row-cells{grid-template-columns:1fr}}
