@@ -557,3 +557,4 @@ body{word-break:keep-all;overflow-wrap:break-word}
 #storage .pair .vl-fig{max-width:380px}
 #storage .pair .vl-fig img,#storage .pair .el-fig img{width:100%;max-width:none}
 #storage .pair figcaption{font-size:13.5px}
+#storage .pair figure.panel{justify-self:center;margin-left:auto;margin-right:auto}
