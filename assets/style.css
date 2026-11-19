@@ -549,3 +549,6 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .el-fig{padding:12px}
 .el-fig img{display:block;width:100%;height:auto;border-radius:6px}
 .el-fig figcaption{margin-top:8px;font-size:14px;color:var(--muted);line-height:1.5}
+/* voltage-loss figure: fill the box instead of floating in empty space */
+#storage .pair .vl-fig{justify-content:space-between;max-width:520px}
+#storage .pair .vl-fig img{width:100%;max-width:none}
