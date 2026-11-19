@@ -523,3 +523,6 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .matgrid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .matgrid-3 li{flex-direction:column;gap:12px}
 @media (max-width:1000px){.matgrid-3{grid-template-columns:1fr}.matgrid-3 li{flex-direction:row}}
+.vl-fig{padding:12px;max-width:440px}
+.vl-fig img{display:block;width:100%;max-width:422px;height:auto;margin:0 auto}
+.vl-fig figcaption{margin-top:8px;font-size:14px;color:var(--muted);line-height:1.5}
