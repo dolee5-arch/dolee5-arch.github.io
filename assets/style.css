@@ -536,3 +536,11 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .row-cells{grid-template-columns:minmax(0,1fr) minmax(0,440px);margin-top:28px;border-top:1px solid var(--line-2)}
 .row-cells .strategy-text p{max-width:560px}
 @media (max-width:1000px){.row-cells{grid-template-columns:1fr}}
+/* align the two columns: title, text and figure rows line up */
+#storage .pair{grid-template-rows:auto auto auto auto;row-gap:0}
+#storage .pair > article{display:grid;grid-row:span 4;grid-template-rows:subgrid;align-content:start}
+#storage .pair > article > p:not(.topic-k){margin:0 0 16px}
+#storage .pair figure.panel{margin:0;width:100%;max-width:520px;display:flex;flex-direction:column;justify-content:center}
+#storage .pair figure.panel svg{width:100%;height:auto}
+#storage .pair .vl-fig{padding:12px}
+@media (max-width:1000px){#storage .pair > article{grid-row:auto;grid-template-rows:none;display:block}#storage .pair > article + article{margin-top:32px}}
