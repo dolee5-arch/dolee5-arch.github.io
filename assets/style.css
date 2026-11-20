@@ -559,3 +559,11 @@ body{word-break:keep-all;overflow-wrap:break-word}
 #storage .pair figcaption{font-size:13.5px}
 #storage .pair figure.panel{justify-self:center;margin-left:auto;margin-right:auto}
 .glance .glance-static{display:flex;flex-direction:column;gap:4px;height:100%;padding:16px 18px;border-radius:12px;background:var(--accent-soft);color:var(--ink);border:1px solid transparent}
+/* catalysis: two example columns */
+.ex-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto auto;column-gap:48px;margin-top:20px}
+.ex-pair > article{display:grid;grid-row:span 3;grid-template-rows:subgrid;align-content:start}
+.ex-pair h4{margin:0 0 6px;font-size:18px;line-height:1.35}
+.ex-pair p{margin:0 0 14px;max-width:560px}
+.ex-pair figure.panel{margin:0;padding:12px;max-width:460px;width:100%;justify-self:center;align-self:start}
+.ex-pair figure img{display:block;width:100%;height:auto;border-radius:6px}
+@media (max-width:1000px){.ex-pair{grid-template-columns:1fr}.ex-pair > article{display:block;grid-row:auto}.ex-pair > article + article{margin-top:32px}}
