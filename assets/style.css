@@ -578,5 +578,7 @@ body{word-break:keep-all;overflow-wrap:break-word}
 @media (max-width:600px){.area-head{padding:18px 20px}}
 
 /* TIM schematic inside the Functional Materials card */
-.tim-fig{margin:16px 0 0}
+.matgrid li{align-items:stretch}
+.matgrid li > div{display:flex;flex-direction:column;flex:1;min-width:0}
+.tim-fig{margin:auto 0 0;padding-top:18px;display:flex;justify-content:center}
 .tim-fig svg{display:block;width:100%;max-width:300px;height:auto}
