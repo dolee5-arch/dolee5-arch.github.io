@@ -579,4 +579,4 @@ body{word-break:keep-all;overflow-wrap:break-word}
 
 /* TIM schematic inside the Functional Materials card */
 .tim-fig{margin:16px 0 0}
-.tim-fig svg{display:block;width:100%;max-width:520px;height:auto}
+.tim-fig svg{display:block;width:100%;max-width:300px;height:auto}
