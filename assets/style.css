@@ -576,3 +576,7 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .es-hero + .glance{margin-top:24px}
 
 @media (max-width:600px){.area-head{padding:18px 20px}}
+
+/* TIM schematic inside the Functional Materials card */
+.tim-fig{margin:16px 0 0}
+.tim-fig svg{display:block;width:100%;max-width:520px;height:auto}
