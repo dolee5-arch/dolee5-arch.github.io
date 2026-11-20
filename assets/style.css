@@ -582,3 +582,9 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .matgrid li > div{display:flex;flex-direction:column;flex:1;min-width:0}
 .tim-fig{margin:auto 0 0;padding-top:18px;display:flex;justify-content:center}
 .tim-fig svg{display:block;width:100%;max-width:300px;height:auto}
+
+/* Site-wide polish (2026-11-20 review) */
+body{min-height:100vh;display:flex;flex-direction:column}
+body > main{flex:1 0 auto}
+.section-head > p.head-action{flex:0 0 auto}
+.ex-pair figure.panel{align-self:stretch;display:flex;align-items:center;justify-content:center}
