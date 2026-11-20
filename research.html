@@ -349,27 +349,32 @@
         <!-- arrows -->
         <g stroke="#8A9690" stroke-width="2" fill="none"><path d="M258 120 H316"/><path d="M700 120 H742"/><path d="M258 250 H316"/><path d="M700 250 H742"/></g>
         <g fill="#8A9690"><path d="M316 115 L326 120 L316 125Z"/><path d="M742 115 L752 120 L742 125Z"/><path d="M316 245 L326 250 L316 255Z"/><path d="M742 245 L752 250 L742 255Z"/></g>
-        <!-- thermochemical catalyst -->
+        <!-- heterogeneous catalyst: metal nanoparticles on an oxide support -->
         <rect x="332" y="75" width="358" height="90" rx="10" fill="#fff" stroke="#C9D3CE" stroke-width="1.5"/>
-        <g>
-          <circle cx="388" cy="120" r="30" fill="#E6ECF5"/>
-          <g stroke="#2F5C9C" stroke-width="1.6" stroke-linecap="round"><path d="M408.0 120.0 L417.0 120.0"/><path d="M406.5 127.7 L414.8 131.1"/><path d="M402.1 134.1 L408.5 140.5"/><path d="M395.7 138.5 L399.1 146.8"/><path d="M388.0 140.0 L388.0 149.0"/><path d="M380.3 138.5 L376.9 146.8"/><path d="M373.9 134.1 L367.5 140.5"/><path d="M369.5 127.7 L361.2 131.1"/><path d="M368.0 120.0 L359.0 120.0"/><path d="M369.5 112.3 L361.2 108.9"/><path d="M373.9 105.9 L367.5 99.5"/><path d="M380.3 101.5 L376.9 93.2"/><path d="M388.0 100.0 L388.0 91.0"/><path d="M395.7 101.5 L399.1 93.2"/><path d="M402.1 105.9 L408.5 99.5"/><path d="M406.5 112.3 L414.8 108.9"/></g>
-          <circle cx="388" cy="120" r="18" fill="#B9C2BE" stroke="#8A9690" stroke-width="1.2"/>
-          <circle cx="456" cy="120" r="30" fill="#E6ECF5"/>
-          <g stroke="#2F5C9C" stroke-width="1.6" stroke-linecap="round"><path d="M476.0 120.0 L485.0 120.0"/><path d="M474.5 127.7 L482.8 131.1"/><path d="M470.1 134.1 L476.5 140.5"/><path d="M463.7 138.5 L467.1 146.8"/><path d="M456.0 140.0 L456.0 149.0"/><path d="M448.3 138.5 L444.9 146.8"/><path d="M441.9 134.1 L435.5 140.5"/><path d="M437.5 127.7 L429.2 131.1"/><path d="M436.0 120.0 L427.0 120.0"/><path d="M437.5 112.3 L429.2 108.9"/><path d="M441.9 105.9 L435.5 99.5"/><path d="M448.3 101.5 L444.9 93.2"/><path d="M456.0 100.0 L456.0 91.0"/><path d="M463.7 101.5 L467.1 93.2"/><path d="M470.1 105.9 L476.5 99.5"/><path d="M474.5 112.3 L482.8 108.9"/></g>
-          <circle cx="456" cy="120" r="18" fill="#B9C2BE" stroke="#8A9690" stroke-width="1.2"/>
-        </g>
-        <text x="508" y="107" font-size="22" font-weight="700" fill="#2F5C9C">Heterogeneous</text>
-        <text x="508" y="132" font-size="22" font-weight="700" fill="#2F5C9C">Catalysts</text>
-        <text x="508" y="157" font-size="19" fill="#5B6863">Thermocatalytic</text>
+        <defs>
+          <radialGradient id="npMetal" cx="0.38" cy="0.3" r="0.8">
+            <stop offset="0" stop-color="#E9EEF6"/><stop offset="0.55" stop-color="#8FA6CC"/><stop offset="1" stop-color="#3F5F92"/>
+          </radialGradient>
+        </defs>
+        <rect x="352" y="132" width="130" height="22" rx="2" fill="#D3DAD6"/>
+        <g fill="#B4BEB9"><circle cx="358" cy="140" r="1.6"/><circle cx="358" cy="149" r="1.6"/><circle cx="368" cy="140" r="1.6"/><circle cx="368" cy="149" r="1.6"/><circle cx="378" cy="140" r="1.6"/><circle cx="378" cy="149" r="1.6"/><circle cx="388" cy="140" r="1.6"/><circle cx="388" cy="149" r="1.6"/><circle cx="398" cy="140" r="1.6"/><circle cx="398" cy="149" r="1.6"/><circle cx="408" cy="140" r="1.6"/><circle cx="408" cy="149" r="1.6"/><circle cx="418" cy="140" r="1.6"/><circle cx="418" cy="149" r="1.6"/><circle cx="428" cy="140" r="1.6"/><circle cx="428" cy="149" r="1.6"/><circle cx="438" cy="140" r="1.6"/><circle cx="438" cy="149" r="1.6"/><circle cx="448" cy="140" r="1.6"/><circle cx="448" cy="149" r="1.6"/><circle cx="458" cy="140" r="1.6"/><circle cx="458" cy="149" r="1.6"/><circle cx="468" cy="140" r="1.6"/><circle cx="468" cy="149" r="1.6"/><circle cx="478" cy="140" r="1.6"/><circle cx="478" cy="149" r="1.6"/></g>
+        <path d="M364 132 A15 15 0 0 1 394 132Z" fill="url(#npMetal)"/>
+        <path d="M404 132 A19 19 0 0 1 442 132Z" fill="url(#npMetal)"/>
+        <path d="M452 132 A13 13 0 0 1 478 132Z" fill="url(#npMetal)"/>
+        <g stroke="#7A8782" stroke-width="2"><path d="M418 102 L429 96"/></g>
+        <circle cx="416" cy="103" r="6" fill="#5B6670"/><circle cx="431" cy="95" r="6" fill="#E06B5A"/>
+        <path d="M423 108 V112" stroke="#9AA7A1" stroke-width="1.5" stroke-dasharray="2 2"/>
+        <text x="500" y="110" font-size="22" font-weight="700" fill="#2F5C9C">Heterogeneous</text>
+        <text x="500" y="135" font-size="22" font-weight="700" fill="#2F5C9C">Catalysis</text>
+        <text x="500" y="159" font-size="19" fill="#5B6863">Thermocatalytic</text>
         <!-- electrocatalyst -->
         <rect x="332" y="205" width="358" height="90" rx="10" fill="#fff" stroke="#C9D3CE" stroke-width="1.5"/>
-        <rect x="380" y="216" width="22" height="70" rx="2" fill="#8C9893"/>
-        <g fill="#1F7A33"><circle cx="406" cy="222" r="4"/><circle cx="406" cy="234" r="4"/><circle cx="406" cy="246" r="4"/><circle cx="406" cy="258" r="4"/><circle cx="406" cy="270" r="4"/><circle cx="406" cy="282" r="4"/></g>
-        <rect x="436" y="216" width="8" height="70" fill="#D9E0DC"/>
-        <rect x="470" y="216" width="22" height="70" rx="2" fill="#8C9893"/>
-        <text x="508" y="244" font-size="22" font-weight="700" fill="#1F7A33">Electrocatalyst</text>
-        <text x="508" y="272" font-size="19" fill="#5B6863">Electrocatalytic</text>
+        <rect x="366" y="216" width="22" height="70" rx="2" fill="#8C9893"/>
+        <g fill="#1F7A33"><circle cx="392" cy="222" r="4"/><circle cx="392" cy="234" r="4"/><circle cx="392" cy="246" r="4"/><circle cx="392" cy="258" r="4"/><circle cx="392" cy="270" r="4"/><circle cx="392" cy="282" r="4"/></g>
+        <rect x="420" y="216" width="8" height="70" fill="#D9E0DC"/>
+        <rect x="454" y="216" width="22" height="70" rx="2" fill="#8C9893"/>
+        <text x="500" y="244" font-size="22" font-weight="700" fill="#1F7A33">Electrocatalysis</text>
+        <text x="500" y="272" font-size="19" fill="#5B6863">Electrocatalytic</text>
         <!-- products -->
         <text x="860" y="122" font-size="32" font-weight="700" fill="#2F5C9C" text-anchor="middle">H₂</text>
         <text x="860" y="148" font-size="19" fill="#5B6863" text-anchor="middle">Hydrogen</text>
