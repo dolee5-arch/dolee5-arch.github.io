@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/style.css?v=20261120b">
+<link rel="stylesheet" href="assets/style.css?v=20261120c">
 </head>
 <body>
 
@@ -43,6 +43,89 @@
       <h2>Electrochemical Energy Storage</h2>
       <p class="area-q">Flow batteries for safe, highly scalable, long-duration energy storage.</p>
     </header>
+
+    <figure class="es-hero">
+      <svg viewBox="0 0 1000 380" role="img" aria-labelledby="esht">
+        <title id="esht">Energy storage on the grid: solar and wind power is stored in a flow battery and delivered through the grid to data centers and cities when it is needed, day or night.</title>
+        <defs>
+          <linearGradient id="esSky" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0" stop-color="#FFF4D6"/><stop offset="0.5" stop-color="#EEF5EF"/><stop offset="1" stop-color="#DCE3F2"/>
+          </linearGradient>
+          <path id="esBlade" d="M0 0 C-7 -22 -5 -52 0 -66 C5 -52 7 -22 0 0Z"/>
+        </defs>
+        <rect x="0" y="0" width="1000" height="296" rx="18" fill="url(#esSky)"/>
+        <rect x="0" y="286" width="1000" height="10" fill="#CBD9CF"/>
+        <!-- sun -->
+        <g stroke="#F2A93B" stroke-width="4" stroke-linecap="round">
+          <path d="M70 18 V28"/><path d="M70 112 V122"/><path d="M18 70 H28"/><path d="M112 70 H122"/>
+          <path d="M33 33 L40 40"/><path d="M100 100 L107 107"/><path d="M33 107 L40 100"/><path d="M100 40 L107 33"/>
+        </g>
+        <circle cx="70" cy="70" r="30" fill="#F7BE4A"/>
+        <!-- wind turbines -->
+        <g stroke="#93A29B" stroke-width="2" fill="#fff">
+          <path d="M168 288 L172 118 L176 288Z" fill="#E6ECE8"/>
+          <use href="#esBlade" transform="translate(172 118) rotate(15)"/>
+          <use href="#esBlade" transform="translate(172 118) rotate(135)"/>
+          <use href="#esBlade" transform="translate(172 118) rotate(255)"/>
+          <circle cx="172" cy="118" r="6"/>
+          <path d="M232 288 L235 160 L238 288Z" fill="#E6ECE8"/>
+          <use href="#esBlade" transform="translate(235 160) rotate(60) scale(0.72)"/>
+          <use href="#esBlade" transform="translate(235 160) rotate(180) scale(0.72)"/>
+          <use href="#esBlade" transform="translate(235 160) rotate(300) scale(0.72)"/>
+          <circle cx="235" cy="160" r="5"/>
+        </g>
+        <!-- solar panels -->
+        <g>
+          <g stroke="#7C8A84" stroke-width="3"><path d="M40 286 V266"/><path d="M102 286 V266"/></g>
+          <path d="M14 270 L76 270 L92 236 L30 236Z" fill="#2F5C9C"/>
+          <path d="M76 270 L138 270 L154 236 L92 236Z" fill="#3A6BB0"/>
+          <g stroke="#A9C2E6" stroke-width="1.5"><path d="M22 253 H146"/><path d="M45 270 L61 236"/><path d="M107 270 L123 236"/></g>
+        </g>
+        <!-- flow to storage -->
+        <g fill="none" stroke="#1F7A33" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 12"><path d="M262 228 H372"/><path d="M628 228 H690"/><path d="M770 228 H800"/></g>
+        <g fill="#1F7A33"><path d="M372 220 L386 228 L372 236Z"/><path d="M690 220 L704 228 L690 236Z"/><path d="M800 220 L814 228 L800 236Z"/></g>
+        <!-- flow battery -->
+        <rect x="390" y="280" width="232" height="8" rx="3" fill="#9FB0A7"/>
+        <g stroke-width="3">
+          <path d="M404 140 V270 A33 10 0 0 0 470 270 V140" fill="#E2ECF8" stroke="#2F5C9C"/>
+          <ellipse cx="437" cy="140" rx="33" ry="10" fill="#F2F7FD" stroke="#2F5C9C"/>
+          <path d="M542 140 V270 A33 10 0 0 0 608 270 V140" fill="#E3F1E4" stroke="#1F7A33"/>
+          <ellipse cx="575" cy="140" rx="33" ry="10" fill="#F3FAF3" stroke="#1F7A33"/>
+        </g>
+        <path d="M410 200 V268 A27 8 0 0 0 464 268 V200Z" fill="#2F5C9C" opacity=".35"/>
+        <path d="M548 200 V268 A27 8 0 0 0 602 268 V200Z" fill="#1F7A33" opacity=".35"/>
+        <g fill="none" stroke="#7C8A84" stroke-width="5" stroke-linecap="round"><path d="M470 250 H482"/><path d="M530 250 H542"/><path d="M470 170 H482"/><path d="M530 170 H542"/></g>
+        <rect x="482" y="160" width="48" height="114" rx="4" fill="#fff" stroke="#3A4642" stroke-width="3"/>
+        <g stroke="#9FC3A4" stroke-width="3"><path d="M494 170 V264"/><path d="M506 170 V264"/><path d="M518 170 V264"/></g>
+        <path d="M512 96 L496 124 H508 L500 148 L520 116 H508 Z" fill="#F2A93B"/>
+        <!-- grid tower -->
+        <g fill="none" stroke="#6F7E77" stroke-width="3" stroke-linejoin="round">
+          <path d="M714 288 L728 130 L742 130 L756 288"/>
+          <path d="M700 152 H770"/><path d="M706 182 H764"/>
+          <path d="M720 214 L750 250 M750 214 L720 250 M724 182 L746 214 M746 182 L724 214"/>
+        </g>
+        <!-- night sky -->
+        <circle cx="948" cy="56" r="22" fill="#F4E6AE"/><circle cx="960" cy="48" r="20" fill="#DCE3F2"/>
+        <g fill="#fff"><circle cx="880" cy="36" r="2.5"/><circle cx="905" cy="80" r="2"/><circle cx="985" cy="100" r="2"/><circle cx="845" cy="70" r="2"/></g>
+        <!-- data center -->
+        <rect x="822" y="196" width="78" height="92" rx="4" fill="#DCE3EE" stroke="#4E5F78" stroke-width="2.5"/>
+        <g fill="#4E5F78"><rect x="832" y="208" width="58" height="14" rx="2"/><rect x="832" y="230" width="58" height="14" rx="2"/><rect x="832" y="252" width="58" height="14" rx="2"/></g>
+        <g fill="#5FD07A"><circle cx="840" cy="215" r="2.5"/><circle cx="848" cy="215" r="2.5"/><circle cx="840" cy="237" r="2.5"/><circle cx="848" cy="237" r="2.5"/><circle cx="840" cy="259" r="2.5"/><circle cx="848" cy="259" r="2.5"/></g>
+        <!-- city -->
+        <rect x="910" y="128" width="44" height="160" fill="#C6D1E2" stroke="#4E5F78" stroke-width="2.5"/>
+        <g fill="#F5D27A"><rect x="918" y="142" width="10" height="12"/><rect x="936" y="142" width="10" height="12"/><rect x="918" y="166" width="10" height="12"/><rect x="936" y="190" width="10" height="12"/><rect x="918" y="214" width="10" height="12"/><rect x="936" y="214" width="10" height="12"/><rect x="918" y="238" width="10" height="12"/><rect x="936" y="262" width="10" height="12"/></g>
+        <path d="M958 288 V236 L976 220 L994 236 V288Z" fill="#E6EBF3" stroke="#4E5F78" stroke-width="2.5"/>
+        <rect x="970" y="250" width="12" height="14" fill="#F5D27A"/>
+        <!-- labels -->
+        <g font-size="26" font-weight="600" fill="#3A4642" text-anchor="middle">
+          <text x="130" y="334">Solar &amp; wind</text>
+          <text x="506" y="334">Flow battery storage</text>
+          <text x="735" y="334">Grid</text>
+          <text x="905" y="334">Data centers</text>
+          <text x="905" y="364">&amp; cities</text>
+        </g>
+      </svg>
+    </figure>
 
     <ul class="glance" aria-label="Research topics">
       <li><a href="#es-materials"><span class="gk">Energy storage materials and redox chemistry</span><span class="gv">Nano-electrofluids, redox mediators, vanadium electrolytes</span></a></li>

@@ -567,3 +567,8 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .ex-pair figure.panel{margin:0;padding:12px;max-width:460px;width:100%;justify-self:center;align-self:start}
 .ex-pair figure img{display:block;width:100%;height:auto;border-radius:6px}
 @media (max-width:1000px){.ex-pair{grid-template-columns:1fr}.ex-pair > article{display:block;grid-row:auto}.ex-pair > article + article{margin-top:32px}}
+
+/* Energy storage overview illustration */
+.es-hero{margin:24px auto 8px;max-width:960px}
+.es-hero svg{display:block;width:100%;height:auto}
+.es-hero + .glance{margin-top:24px}
