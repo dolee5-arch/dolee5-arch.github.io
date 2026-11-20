@@ -349,7 +349,7 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .area{padding:72px 0;border-top:1px solid var(--line)}
 .page-head + .area{border-top:0;padding-top:48px}
 .area.alt{background:var(--paper)}
-.area-head h2{font-size:clamp(26px,2.6vw,34px)}
+.area-head h2{font-size:clamp(26px,2.6vw,34px);color:var(--blue);padding-left:16px;border-left:6px solid var(--blue);line-height:1.2}
 .area-q{margin:10px 0 0;font-size:20px;line-height:1.45;color:var(--accent-ink);font-weight:600;max-width:760px}
 .area h3{font-size:18px;letter-spacing:-.01em;margin:0 0 8px}
 .area p{color:var(--ink-2)}
